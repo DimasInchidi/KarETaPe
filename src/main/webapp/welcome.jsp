@@ -77,7 +77,7 @@
                                     <span>Account Settings</span>
                                 </li>
                                 <li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-                                <li><a href="login.html"><i class="halflings-icon off"></i> Logout</a></li>
+                                <li><a href="Logout"><i class="halflings-icon off"></i> Logout</a></li>
                             </ul>
                             
                         </li>
