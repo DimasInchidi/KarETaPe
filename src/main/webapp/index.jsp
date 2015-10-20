@@ -65,7 +65,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="index.html"><span>eKaTePe</span></a>
+                    <a class="brand" href="index.jsp"><span>eKaTePe</span></a>
 
                     <!-- start: Header Menu -->
                     <div class="header-nav">
