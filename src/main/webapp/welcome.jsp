@@ -58,26 +58,28 @@
                             <a class="btn" href="#">
                                 <i class="halflings-icon white home"></i> Home                                
                             </a>                            
-                        </li>                                                 
-                        <li class="dropdown">
-                            <a class="btn" href="#">
-                                <i class="halflings-icon white edit"></i> Data                                 
-                            </a>
-                            <ul class="dropdown-menu">
-                                
-                            </ul>                                
-                        </li> 
+                        </li>  
                         
                         <li class="dropdown">
-                            <a class="btn dropdown-toggle" data-toggle="modal" data-target="#modlog">
+                            <a class="btn dropdown-toggle">
+                                <i class="halflings-icon white list-alt"></i> Data
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#"><i class="halflings-icon edit"></i> Profile</a></li>
+                                <li><a href="Logout"><i class="halflings-icon check"></i> Logout</a></li>
+                            </ul>
+                        </li>
+                        
+                        <li class="dropdown">
+                            <a class="btn dropdown-toggle">
                                 <i class="halflings-icon white user"></i> Selamat Datang, Admin
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-menu-title">
                                     <span>Account Settings</span>
                                 </li>
-                                <li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-                                <li><a href="Logout"><i class="halflings-icon off"></i> Logout</a></li>
+                                <li><a href="#"><i class="halflings-icon user"></i> Tambah Data</a></li>
+                                <li><a href="#"><i class="halflings-icon off"></i> Ubah Data</a></li>
                             </ul>
                             
                         </li>
