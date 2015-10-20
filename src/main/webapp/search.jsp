@@ -15,6 +15,24 @@
  * limitations under the License.
  */
 -->
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
+         pageEncoding="US-ASCII"%>
+<%
+//allow access only if session exists
+String user = null;
+if(session.getAttribute("user") == null){
+    response.sendRedirect("/");
+}else user = (String) session.getAttribute("user");
+String userName = null;
+String sessionID = null;
+Cookie[] cookies = request.getCookies();
+if(cookies !=null){
+for(Cookie cookie : cookies){
+    if(cookie.getName().equals("user")) userName = cookie.getValue();
+    if(cookie.getName().equals("JSESSIONID")) sessionID = cookie.getValue();
+}
+}
+%>
 <!DOCTYPE html>
 
     <html>
@@ -28,9 +46,13 @@
             <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>       
             
         </head>
-        <body>
-            <h1>"Hello World!"</h1>
-            
+        <body>            
+            <div class="container-fluid-full">
+                <h2>Data Penduduk</h2>
+                <div class="row-fluid">
+                    
+                </div>
+            </div>
             
             
             <script src="assets/js/jquery-1.9.1.min.js"></script>
