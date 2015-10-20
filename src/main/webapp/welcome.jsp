@@ -54,12 +54,20 @@
                 <div class="nav-no-collapse header-nav">
                     
                     <ul class="nav pull-right">
-                        <li class="dropdown hidden-phone">
+                        <li>
                             <a class="btn" href="#">
                                 <i class="halflings-icon white home"></i> Home                                
                             </a>                            
                         </li>                                                 
-                                                
+                        <li class="dropdown">
+                            <a class="btn" href="#">
+                                <i class="halflings-icon white edit"></i> Data                                 
+                            </a>
+                            <ul class="dropdown-menu">
+                                
+                            </ul>                                
+                        </li> 
+                        
                         <li class="dropdown">
                             <a class="btn dropdown-toggle" data-toggle="modal" data-target="#modlog">
                                 <i class="halflings-icon white user"></i> Selamat Datang, Admin
