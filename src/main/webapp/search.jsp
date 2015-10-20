@@ -20,9 +20,9 @@
     <html>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
-            <title>JSP Page</title>
+            <title>Data Pencarian</title>
         </head>
         <body>
-            <h1>value="Hello World!"</h1>
+            <h1>"Hello World!"</h1>
         </body>
     </html>
