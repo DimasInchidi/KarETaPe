@@ -41,20 +41,27 @@ public class Login extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-//          if (FP.doLogin(request.getParameter("Username"), request.getParameter("Password"))) {
-//            FP.CloseCon();
-//          if (FP.CekPriv("Masuk")) {
-        System.err.println("ok login: " + request.getParameter("Username"));
-        HttpSession session = request.getSession();
-        session.setAttribute("userIDKey", "userID");
-        response.sendRedirect("dashboard");
-        //       } else {
-        //response.setStatus(HttpServletResponse.SC_FORBIDDEN);
-//                response.setHeader("Location", Next + "/gabolehmasuk");
-        //      }
-        //} else {
-        //   response.sendError(401, "Silahkan coba lagi");
-        // }
+        String user;
+        String level;
+        //for debug only
+        if (1 == 1) {
+            user = "LMT";
+            level = "admin";
+        } else {
+            user = null;
+            level = null;
+        }
+
+        if (!"".equals(user)) {
+            System.err.println("ok login: " + request.getParameter("username"));
+            HttpSession session = request.getSession(true);
+                session.setAttribute("user", user);
+                session.setAttribute("level", level);
+            System.out.println("-_-");
+            response.sendRedirect("dashboard");
+        } else {
+           response.sendError(401, "Silahkan coba lagi");
+         }
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

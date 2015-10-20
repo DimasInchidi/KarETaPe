@@ -1,21 +1,39 @@
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
+         pageEncoding="US-ASCII"%>
+<%
+//allow access only if session exists
+String user = null;
+if(session.getAttribute("user") == null){
+    response.sendRedirect("/");
+}else user = (String) session.getAttribute("user");
+String userName = null;
+String sessionID = null;
+Cookie[] cookies = request.getCookies();
+if(cookies !=null){
+for(Cookie cookie : cookies){
+    if(cookie.getName().equals("user")) userName = cookie.getValue();
+    if(cookie.getName().equals("JSESSIONID")) sessionID = cookie.getValue();
+}
+}
+%>
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
 <head>
-    
+
     <!-- start: Meta -->
     <meta charset="utf-8">
- 
+
     <title>eKaTePe</title>
     <meta name="description" content="eKaTePe">
     <meta name="author" content="LMT">
     <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
 
     <!-- end: Meta -->
-    
+
     <!-- start: Mobile Specific -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- end: Mobile Specific -->
-    
+
     <!-- start: CSS -->
 
     <link id="bootstrap-style" href="assets/css/bootstrap.min.css" rel="stylesheet">
@@ -25,17 +43,17 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
 
     <!-- end: CSS -->
-    
 
-    
-        
+
+
+
     <!-- start: Favicon -->
     <link rel="shortcut icon" href="img/favicon.ico">
     <!-- end: Favicon -->
-    
-        
-        
-        
+
+
+
+
 </head>
 
 <body>
@@ -49,28 +67,28 @@
                     <span class="icon-bar"></span>
                 </a>
                 <a class="brand" href="index.jsp"><span>eKaTePe</span></a>
-                                
+
                 <!-- start: Header Menu -->
                 <div class="nav-no-collapse header-nav">
-                    
+
                     <ul class="nav pull-right">
                         <li>
                             <a class="btn" href="#">
-                                <i class="halflings-icon white home"></i> Home                                
-                            </a>                            
-                        </li>                                                 
+                                <i class="halflings-icon white home"></i> Home
+                            </a>
+                        </li>
                         <li class="dropdown">
                             <a class="btn" href="#">
-                                <i class="halflings-icon white edit"></i> Data                                 
+                                <i class="halflings-icon white edit"></i> Data
                             </a>
                             <ul class="dropdown-menu">
-                                
-                            </ul>                                
-                        </li> 
-                        
+
+                            </ul>
+                        </li>
+
                         <li class="dropdown">
                             <a class="btn dropdown-toggle" data-toggle="modal" data-target="#modlog">
-                                <i class="halflings-icon white user"></i> Selamat Datang, Admin
+                                <i class="halflings-icon white user"></i> Selamat Datang, <%=user %>
                             </a>
                             <ul class="dropdown-menu">
                                 <li class="dropdown-menu-title">
@@ -79,18 +97,18 @@
                                 <li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
                                 <li><a href="Logout"><i class="halflings-icon off"></i> Logout</a></li>
                             </ul>
-                            
+
                         </li>
                         <!-- end: User Dropdown -->
                     </ul>
                 </div>
                 <!-- end: Header Menu -->
-                
+
             </div>
         </div>
     </div>
     <!-- start: Header -->
-    
+
         <div class="container-fluid-full">
             <div class="row-fluid" style="width: 90%;margin-left: auto; margin-right: auto; margin-bottom: 30px">
 
@@ -113,7 +131,7 @@
                         <p>eKaTePe 2.0 adalah sebuah sistem yang dibuat oleh LMT atau Lembuswana mudah tersakiti
                             dengan tujuan untuk memaksimalkan program e-ktp yang telah dilaksanakan pemerintah Indonesia.</p>
                         <p>Alasan sistem ini dibuat karena kurangnya implementasi dari e-ktp meskipun pada dasarnya
-                            e-ktp merupakan sebuah program yang sangat baik. Sistem ini tidak menggantikan e-ktp melainkan 
+                            e-ktp merupakan sebuah program yang sangat baik. Sistem ini tidak menggantikan e-ktp melainkan
                             dapat menjamah bidang lain yang dapat dimudahkan dengan adanya e-ktp</p>
                         <p>Hasil yang diinginkan dari sistem ini selain dari memaksimalkan program e-ktp, juga memberikan
                             kemudahan kepada masyarakat dalam memaksimalkan fungsi e-ktp</p>
@@ -122,11 +140,11 @@
                     <hr>
                     <br>
                     <div class="row-fluid custom1">
-                        <div class="row-fluid custom2">            
-                            <div class="span8 widget red" onTablet="span7" onDesktop="span8">                   
-                                Pencarian Data                        
-                            </div>                
-                        </div>          
+                        <div class="row-fluid custom2">
+                            <div class="span8 widget red" onTablet="span7" onDesktop="span8">
+                                Pencarian Data
+                            </div>
+                        </div>
                         <div class="row-fluid custom2">
                             <form action="" method="post">
                                 <label><B>NIK</B></label>
@@ -134,25 +152,25 @@
                                 <br>
                                 <button class="btn btn-primary" type="submit" style="width: 70px">
                                     <i class="halflings-icon white search"></i>Cari</button>
-                            </form>        
-                        </div>                
+                            </form>
+                        </div>
                     </div>
                 </div>
 
             </div>
 
-        </div>     
+        </div>
     <footer>
         <p>
-            <span style="text-align:left;float:right">&copy; 2015 | Lembuswana Mudah Tersakiti</span>          
+            <span style="text-align:left;float:right">&copy; 2015 | Lembuswana Mudah Tersakiti</span>
         </p>
     </footer>
-    
-    
+
+
     <div class="clearfix"></div>
-   
-    
-    
+
+
+
     <!-- start: JavaScript-->
 
     <script src="assets/js/jquery-1.9.1.min.js"></script>
@@ -162,7 +180,7 @@
     <script src="assets/js/modernizr.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/jquery.cookie.js"></script>
-    <script src="assets/js/fullcalendar.min.js"></script> 
+    <script src="assets/js/fullcalendar.min.js"></script>
     <script src="assets/js/excanvas.js"></script>
     <script src="assets/js/jquery.flot.js"></script>
     <script src="assets/js/jquery.chosen.min.js"></script>
@@ -180,4 +198,5 @@
     <!-- end: JavaScript-->
 
 </body>
-</html>
+    </html>
+

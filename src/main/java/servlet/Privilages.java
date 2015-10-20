@@ -20,6 +20,7 @@ package servlet;
  *
  * @author DimasInchidi @ Lembuswana Mudah Tersakiti
  */
-public class Privilages {
+public class Privilages extends DB_Transaction {
+
 
 }

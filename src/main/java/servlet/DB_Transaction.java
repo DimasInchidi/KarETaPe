@@ -27,7 +27,7 @@ import javax.swing.JOptionPane;
  *
  * @author DimasInchidi
  */
-public class MySQL {
+public class DB_Transaction {
 
     private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
     private static String DB_URL = "jdbc:postgresql://localhost:5432/heketonDB";
