@@ -147,7 +147,7 @@
         <div class="clearfix"></div>
         <div class="modal hide fade" id="modlog">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" >×</button>
+                <button type="button" class="close" data-dismiss="modal" >x</button>
                 <h3>Login to Your Account</h3>
             </div>
             <div class="modal-body">
