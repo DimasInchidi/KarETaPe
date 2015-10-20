@@ -15,29 +15,10 @@
  * limitations under the License.
  */
 -->
-<%@ page language="java" contentType="text/html; charset=US-ASCII"
-         pageEncoding="US-ASCII"%>
-<%
-//allow access only if session exists
-String user = null;
-if(session.getAttribute("user") == null){
-    response.sendRedirect("/");
-}else user = (String) session.getAttribute("user");
-String userName = null;
-String sessionID = null;
-Cookie[] cookies = request.getCookies();
-if(cookies !=null){
-for(Cookie cookie : cookies){
-    if(cookie.getName().equals("user")) userName = cookie.getValue();
-    if(cookie.getName().equals("JSESSIONID")) sessionID = cookie.getValue();
-}
-}
-%>
 <!DOCTYPE html>
 
     <html>
-        <head>
-            <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+        <head>            
             <title>Data Pencarian</title>
             <link id="bootstrap-style" href="assets/css/bootstrap.min.css" rel="stylesheet">
             <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
@@ -50,7 +31,7 @@ for(Cookie cookie : cookies){
             <div class="container-fluid-full">
                 <h2>Data Penduduk</h2>
                 <div class="row-fluid">
-                    
+                    asdasdasd
                 </div>
             </div>
             

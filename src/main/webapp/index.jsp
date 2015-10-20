@@ -127,7 +127,7 @@
                                 <label><B>NIK</B></label>
                                 <input type="text" name="nik" id="nik" placeholder="Isi dengan NIK" />
                                 <br>
-                                <a class="btn btn-primary" type="submit" style="width: 70px" href="search.jsp" onclick="return popitup('search.jsp')">
+                                <a class="btn btn-primary" type="submit" style="width: 70px" href="search.jsp" onclick="return popitupsmall('search.jsp')">
                                     <i class="halflings-icon white search"></i>Cari</a>
                             </form>        
                         </div>                
@@ -179,15 +179,7 @@
 
 
                 <!-- start: JavaScript-->
-                <script language="javascript" type="text/javascript">
-                    function popitup(url) {
-                        newwindow = window.open(url, 'Data Pencarian', "type=fullWindow,fullscreen");
-                        if (window.focus) {
-                            newwindow.focus()
-                        }
-                        return false;
-                    }
-                </script>
+                <script src="assets/js/forsearch.js"></script>
                 <script src="assets/js/jquery-1.9.1.min.js"></script>
                 <script src="assets/js/jquery-migrate-1.0.0.min.js"></script>
                 <script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>

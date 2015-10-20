@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=US-ASCII"
+<%--<%@ page language="java" contentType="text/html; charset=US-ASCII"
          pageEncoding="US-ASCII"%>
 <%
 //allow access only if session exists
@@ -14,8 +14,8 @@ for(Cookie cookie : cookies){
     if(cookie.getName().equals("user")) userName = cookie.getValue();
     if(cookie.getName().equals("JSESSIONID")) sessionID = cookie.getValue();
 }
-}
-%>
+}<%=user %> <-- ini ditaro hbs selamat datang jgn lupa
+%>--%>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -77,8 +77,8 @@ for(Cookie cookie : cookies){
                                     <i class="halflings-icon white home"></i> Home
                                 </a>
                             </li>
-                            
-                            
+
+
                             </li>
                             <li class="dropdown">
                                 <a class="btn" href="#">
@@ -91,7 +91,7 @@ for(Cookie cookie : cookies){
                             </li>
                             <li class="dropdown">
                                 <a class="btn dropdown-toggle">
-                                    <i class="halflings-icon white user"></i> Selamat Datang, <%=user %>
+                                    <i class="halflings-icon white user"></i> Selamat Datang,                                    
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-menu-title">
@@ -153,8 +153,8 @@ for(Cookie cookie : cookies){
                                 <label><B>NIK</B></label>
                                 <input type="text" name="nik" id="nik" placeholder="Isi dengan NIK" />
                                 <br>
-                                <button class="btn btn-primary" type="submit" style="width: 70px">
-                                    <i class="halflings-icon white search"></i>Cari</button>
+                                <a class="btn btn-primary" type="submit" style="width: 70px" href="search.jsp" onclick="return popitupsmall('search.jsp')">
+                                    <i class="halflings-icon white search"></i>Cari</a>
                             </form>
                         </div>
                     </div>
@@ -175,7 +175,7 @@ for(Cookie cookie : cookies){
 
 
         <!-- start: JavaScript-->
-
+        <script src="assets/js/forsearch.js"></script>
         <script src="assets/js/jquery-1.9.1.min.js"></script>
         <script src="assets/js/jquery-migrate-1.0.0.min.js"></script>
         <script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>
