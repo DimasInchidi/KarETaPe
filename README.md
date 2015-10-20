@@ -1,4 +1,4 @@
-# EKAtepe
+# KarETaPe
 
 ##This is for hackathon merdeka 2.0!
 
