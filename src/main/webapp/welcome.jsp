@@ -84,7 +84,7 @@ for(Cookie cookie : cookies){
                                 <a class="btn" href="#">
                                     <i class="halflings-icon white list-alt"></i> Data Penduduk
                                 </a>
-                                <ul>
+                                <ul class="dropdown-menu">
                                     <li><a href="#"><i class="halflings-icon edit"></i> Tambah Data</a></li>
                                     <li><a href="Logout"><i class="halflings-icon check"></i> Ubah Data</a></li>
                                 </ul>
