@@ -24,7 +24,7 @@
         <meta charset="utf-8">
         <title>eKaTePe</title>
         <meta name="description" content="eKaTePe">
-        <meta name="author" content="dikdave">
+        <meta name="author" content="LMT">
         <!-- end: Meta -->
 
         <!-- start: Mobile Specific -->
@@ -52,11 +52,7 @@
 
         <!-- start: Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico">
-        <!-- end: Favicon -->
-
-
-
-
+        <!-- end: Favicon --> 
     </head>
 
     <body>
@@ -75,16 +71,11 @@
                     <div class="header-nav">
 
                         <ul class="nav pull-right">
-                            <li>
-                                <a class="btn" data-toggle="modal" data-target="#modlog">
-                                    <i class="halflings-icon white search"></i> Cari
-                                </a>
-                            </li>
 
                             <li>
                                 <a class="btn" data-toggle="modal" data-target="#modlog">
                                     <i class="halflings-icon white off"></i> Login
-                                </a>
+                                </a>                            
                             </li>
                         </ul>
                     </div>
@@ -96,7 +87,7 @@
         <!-- start: Header -->
 
         <div class="container-fluid-full">
-            <div class="row-fluid">
+            <div class="row-fluid" style="width: 90%;margin-left: auto; margin-right: auto; margin-bottom: 30px">
 
                 <noscript>
                 <div class="alert alert-block span10">
@@ -113,28 +104,42 @@
                         <marquee direction="left" scrollamount="5" height="20px" width="100%" >Selamat datang di website eKaTePe. </marquee>
                     </ul>
 
-                    <div class="row-fluid" style="text-align:center;">
-                        <p>asdasdasd
-                            asdasdasdasdasd
-                            asdasdasdasdasdasd</p>
+                    <div class="row-fluid custom3">
+                        <p>eKaTePe 2.0 adalah sebuah sistem yang dibuat oleh LMT atau Lembuswana mudah tersakiti
+                            dengan tujuan untuk memaksimalkan program e-ktp yang telah dilaksanakan pemerintah Indonesia.</p>
+                        <p>Alasan sistem ini dibuat karena kurangnya implementasi dari e-ktp meskipun pada dasarnya
+                            e-ktp merupakan sebuah program yang sangat baik. Sistem ini tidak menggantikan e-ktp melainkan 
+                            dapat menjamah bidang lain yang dapat dimudahkan dengan adanya e-ktp</p>
+                        <p>Hasil yang diinginkan dari sistem ini selain dari memaksimalkan program e-ktp, juga memberikan
+                            kemudahan kepada masyarakat dalam memaksimalkan fungsi e-ktp</p>
+                        <br>
                     </div>
-                    <div class="row-fluid" style="margin-left:17%;">
-
-                        <div class="span8 widget blue" onTablet="span7" onDesktop="span8">
-
-                            <div id="stats-chart2"  style="height:282px" ></div>
-
-                        </div>
+                    <hr>
+                    <br>
+                    <div class="row-fluid custom1">
+                        <div class="row-fluid custom2">            
+                            <div class="span8 widget red" onTablet="span7" onDesktop="span8">                   
+                                Pencarian Data                        
+                            </div>                
+                        </div>          
+                        <div class="row-fluid custom2">
+                            <form action="" method="post">
+                                <label><B>NIK</B></label>
+                                <input type="text" name="nik" id="nik" placeholder="Isi dengan NIK" />
+                                <br>
+                                <button class="btn btn-primary" type="submit" style="width: 70px">
+                                    <i class="halflings-icon white search"></i>Cari</button>
+                            </form>        
+                        </div>                
                     </div>
-
-
                 </div>
+
             </div>
 
-        </div>
+        </div>      
         <footer>
             <p>
-                <span style="text-align:left;float:right">&copy; 2015 | Lembuswana Mudah Tersakiti</span>
+                <span style="text-align:left;float:right">&copy; 2015 | Lembuswana Mudah Tersakiti</span>          
             </p>
         </footer>
 
@@ -147,9 +152,8 @@
             </div>
             <div class="modal-body">
                 <div class="row-fluid">
-                    <form action="Login" method="POST" style="position: relative; text-align:center;">
-                        <fieldset>
-
+                    <form action="Login" method="post" style="position: relative; text-align:center;">
+                        <fieldset>                            
                             <div class="input-prepend" title="Username">
                                 <span class="add-on"><i class="halflings-icon user"></i></span>
                                 <input class="input-large" name="username" id="username" type="text" placeholder="type username"/>
@@ -162,43 +166,45 @@
                             </div>
                             <div class="clearfix"></div>
 
-                            <label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>
+                            <label class="remember" for="remember"><input type="checkbox" id="remember" />Remember me</label>                   
+
+                            </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal">Close</button>
+                                <button class="btn btn-primary" type="submit">Login</button>
+                            </div>
                     </form>
                 </div>
-            </div>
-            <div class="modal-footer">
-                <a href="#" class="btn" data-dismiss="modal">Close</a>
-                <a href="#" class="btn btn-primary">Login</a>
-            </div>
-        </div>
 
 
-        <!-- start: JavaScript-->
+                <!-- start: JavaScript-->
 
-        <script src="assets/js/jquery-1.9.1.min.js"></script>
-        <script src="assets/js/jquery-migrate-1.0.0.min.js"></script>
-        <script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>
-        <script src="assets/js/jquery.ui.touch-punch.js"></script>
-        <script src="assets/js/modernizr.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.cookie.js"></script>
-        <script src="assets/js/fullcalendar.min.js"></script>
-        <script src="assets/js/excanvas.js"></script>
-        <script src="assets/js/jquery.flot.js"></script>
-        <script src="assets/js/jquery.chosen.min.js"></script>
-        <script src="assets/js/jquery.uniform.min.js"></script>
-        <script src="assets/js/jquery.cleditor.min.js"></script>
-        <script src="assets/js/jquery.iphone.toggle.js"></script>
-        <script src="assets/js/jquery.uploadify-3.1.min.js"></script>
-        <script src="assets/js/jquery.gritter.min.js"></script>
-        <script src="assets/js/jquery.imagesloaded.js"></script>
-        <script src="assets/js/jquery.masonry.min.js"></script>
-        <script src="assets/js/jquery.knob.modified.js"></script>
-        <script src="assets/js/counter.js"></script>
-        <script src="assets/js/retina.js"></script>
-        <script src="assets/js/custom.js"></script>
-        <!-- end: JavaScript-->
+                <script src="assets/js/jquery-1.9.1.min.js"></script>
+                <script src="assets/js/jquery-migrate-1.0.0.min.js"></script>
+                <script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>
+                <script src="assets/js/jquery.ui.touch-punch.js"></script>
+                <script src="assets/js/modernizr.js"></script>
+                <script src="assets/js/bootstrap.min.js"></script>
+                <script src="assets/js/jquery.cookie.js"></script>
+                <script src="assets/js/fullcalendar.min.js"></script> 
+                <script src="assets/js/jquery.elfinder.min.js"></script>  
+                <script src="assets/js/excanvas.js"></script>
+                <script src="assets/js/jquery.chosen.min.js"></script>
+                <script src="assets/js/jquery.uniform.min.js"></script>
+                <script src="assets/js/jquery.cleditor.min.js"></script>
+                <script src="assets/js/jquery.iphone.toggle.js"></script>
+                <script src="assets/js/jquery.uploadify-3.1.min.js"></script>
+                <script src="assets/js/jquery.gritter.min.js"></script>
+                <script src="assets/js/jquery.imagesloaded.js"></script>
+                <script src="assets/js/jquery.masonry.min.js"></script>
+                <script src="assets/js/jquery.knob.modified.js"></script>
+                <script src="assets/js/jquery.noty.js"></script>
+                <script src="assets/js/counter.js"></script>
+                <script src="assets/js/retina.js"></script>
+                <script src="assets/js/custom.js"></script>
+                <!-- end: JavaScript-->
 
-    </body>
-</html>
+                </body>
+                </html>
 
