@@ -14,7 +14,8 @@ for(Cookie cookie : cookies){
     if(cookie.getName().equals("user")) userName = cookie.getValue();
     if(cookie.getName().equals("JSESSIONID")) sessionID = cookie.getValue();
 }
-}<%=user %> <-- ini ditaro hbs selamat datang jgn lupa
+}
+<%=user %> <-- ini ditaro hbs selamat datang jgn lupa
 %>--%>
 <!DOCTYPE html>
 <html lang="en">
@@ -91,7 +92,7 @@ for(Cookie cookie : cookies){
                             </li>
                             <li class="dropdown">
                                 <a class="btn dropdown-toggle">
-                                    <i class="halflings-icon white user"></i> Selamat Datang,                                    
+                                    <i class="halflings-icon white user"></i> Selamat Datang, LMT                                    
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-menu-title">
