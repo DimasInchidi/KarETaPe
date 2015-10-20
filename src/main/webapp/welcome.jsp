@@ -65,8 +65,8 @@
                                 <i class="halflings-icon white list-alt"></i> Data
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a href="#"><i class="halflings-icon edit"></i> Profile</a></li>
-                                <li><a href="Logout"><i class="halflings-icon check"></i> Logout</a></li>
+                                <li><a href="#"><i class="halflings-icon edit"></i> Tambah Data</a></li>
+                                <li><a href="Logout"><i class="halflings-icon check"></i> Ubah Data</a></li>
                             </ul>
                         </li>
                         
@@ -78,8 +78,8 @@
                                 <li class="dropdown-menu-title">
                                     <span>Account Settings</span>
                                 </li>
-                                <li><a href="#"><i class="halflings-icon user"></i> Tambah Data</a></li>
-                                <li><a href="#"><i class="halflings-icon off"></i> Ubah Data</a></li>
+                                <li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
+                                <li><a href="#"><i class="halflings-icon off"></i> Logout</a></li>
                             </ul>
                             
                         </li>
