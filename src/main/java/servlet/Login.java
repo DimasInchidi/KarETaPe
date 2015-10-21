@@ -44,8 +44,9 @@ public class Login extends HttpServlet {
         String user;
         String level;
         //for debug only
-        if (1 == 1) {
-            user = "LMT";
+        boolean UserExist = true;
+        if (UserExist) {
+            user = request.getParameter("username");
             level = "admin";
         } else {
             user = null;
