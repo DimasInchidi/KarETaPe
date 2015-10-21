@@ -39,7 +39,7 @@ for(Cookie cookie : cookies){
 <!-- start: Content -->
 <div id="content" class="span10">
     <ul class="breadcrumb">
-        <marquee direction="left" scrollamount="5" height="20px" width="100%" >Selamat datang di website KarETaPe. </marquee>
+        <marquee direction="left" scrollamount="5" height="30px" width="100%" >Selamat datang di website KarETaPe. </marquee>
     </ul>
 
     <div class="row-fluid c ustom3">
