@@ -22,5 +22,4 @@ package servlet;
  */
 public class Privilages extends DB_Transaction {
 
-
 }
