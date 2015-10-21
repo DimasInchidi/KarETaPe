@@ -30,7 +30,7 @@ import javax.swing.JOptionPane;
 public class DB_Transaction {
 
     private static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";
-    private static String DB_URL = "jdbc:postgresql://localhost:5432/heketonDB";
+    private static String DB_URL = "jdbc:postgresql://ec2-54-204-15-48.compute-1.amazonaws.com:5432/heketonDB";
     private static final String USER = "heketonRoot";
     private static String PASS = "janganlihat";
     private ResultSet rs;
