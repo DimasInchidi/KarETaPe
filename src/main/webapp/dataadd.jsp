@@ -47,8 +47,6 @@ for(Cookie cookie : cookies){
                     <strong><h2>Tambah Data Penduduk</h2></strong>
                 </div>
                 <div class="box-content">
-
-
                     <form action="" method="post">
                         <table border="0" cellspacing="15" cellpadding="15" >
                             <tbody>
