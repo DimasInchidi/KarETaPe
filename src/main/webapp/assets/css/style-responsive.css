@@ -531,5 +531,25 @@
 	footer {
 		padding: 10px 20px;
 	}
-	
+
+	.col-md6{
+		width: 50%;
+		float: left;
+	}
+	.col-md8{
+		width: 80%;
+		float: left;
+	}
+	.col-md2{
+		width: 20%;
+		float: left;
+	}
+	.col-md3{
+		width: 30%;
+		float: left;
+	}
+	.col-md7{
+		width: 70%;
+		float: left;
+	}
 }
