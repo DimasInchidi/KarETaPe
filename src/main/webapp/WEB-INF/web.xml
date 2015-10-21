@@ -13,6 +13,11 @@
         <servlet-name>Dashboard</servlet-name>
         <jsp-file>/welcome.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <description>adding data (tambah data)</description>
+        <servlet-name>New Data</servlet-name>
+        <jsp-file>/dataadd.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -25,12 +30,16 @@
         <servlet-name>Dashboard</servlet-name>
         <url-pattern>/dashboard</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>New Data</servlet-name>
+        <url-pattern>/inputdata</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             10
         </session-timeout>
     </session-config>
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
 </web-app>
