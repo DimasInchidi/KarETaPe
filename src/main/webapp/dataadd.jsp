@@ -131,34 +131,16 @@ for(Cookie cookie : cookies){
                         <marquee direction="left" scrollamount="5" height="20px" width="100%" >Selamat datang di website eKaTePe. </marquee>
                     </ul>
 
-                    <div class="row-fluid custom3">
-                        <p>eKaTePe 2.0 adalah sebuah sistem yang dibuat oleh LMT atau Lembuswana mudah tersakiti
-                            dengan tujuan untuk memaksimalkan program e-ktp yang telah dilaksanakan pemerintah Indonesia.</p>
-                        <p>Alasan sistem ini dibuat karena kurangnya implementasi dari e-ktp meskipun pada dasarnya
-                            e-ktp merupakan sebuah program yang sangat baik. Sistem ini tidak menggantikan e-ktp melainkan
-                            dapat menjamah bidang lain yang dapat dimudahkan dengan adanya e-ktp</p>
-                        <p>Hasil yang diinginkan dari sistem ini selain dari memaksimalkan program e-ktp, juga memberikan
-                            kemudahan kepada masyarakat dalam memaksimalkan fungsi e-ktp</p>
-                        <br>
+                    <div class="row-fluid custom3a">
+                        <strong><h2>Tambah Data Penduduk</h2></strong>
+                        <hr>
+                        <form action="" method="post">
+                            
+                        </form>
                     </div>
-                    <hr>
+                    
                     <br>
-                    <div class="row-fluid custom1">
-                        <div class="row-fluid custom2">
-                            <div class="span8 widget red" onTablet="span7" onDesktop="span8">
-                                Pencarian Data
-                            </div>
-                        </div>
-                        <div class="row-fluid custom2">
-                            <form action="" method="post">
-                                <label><B>NIK</B></label>
-                                <input type="text" name="nik" id="nik" placeholder="Isi dengan NIK" />
-                                <br>
-                                <a class="btn btn-primary" type="submit" style="width: 70px" href="search.jsp" onclick="return popitupsmall('search.jsp')">
-                                    <i class="halflings-icon white search"></i>Cari</a>
-                            </form>
-                        </div>
-                    </div>
+                    
                 </div>
 
             </div>

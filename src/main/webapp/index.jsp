@@ -22,7 +22,7 @@
 
         <!-- start: Meta -->
         <meta charset="utf-8">
-        <title>eKaTePe</title>
+        <title>KarETaPe</title>
         <meta name="description" content="eKaTePe">
         <meta name="author" content="LMT">
         <!-- end: Meta -->
@@ -65,7 +65,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="index.jsp"><span>eKaTePe</span></a>
+                    <a class="brand" href="index.jsp"><span>KarETaPe</span></a>
 
                     <!-- start: Header Menu -->
                     <div class="header-nav">
