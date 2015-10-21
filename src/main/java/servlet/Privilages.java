@@ -16,6 +16,8 @@
  */
 package servlet;
 
+import java.sql.ResultSet;
+
 /**
  *
  * @author DimasInchidi @ Lembuswana Mudah Tersakiti
@@ -25,7 +27,16 @@ public class Privilages extends DB_Transaction {
     String Level = "";
 
     public boolean doLogin(String Username, String Pass) {
-
+        String sql = "SELECT username, level FROM lmt_user WHERE nik = '"+Username+"' AND password = '"+Pass+"'";
+        try{
+            ResultSet rs = super.Select(sql);
+            while(rs.next()){
+                User = rs.getString(0);
+                Level = rs.getString(1);
+            }
+        }catch(Exception ex){
+            return false;
+        }
         return true;
     }
 }
