@@ -32,6 +32,7 @@ for(Cookie cookie : cookies){
     if(cookie.getName().equals("JSESSIONID")) sessionID = cookie.getValue();
 }
 }
+
 %>
 
 <jsp:include page="plate/header.html" flush="true"/>
