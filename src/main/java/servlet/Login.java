@@ -29,7 +29,7 @@ import javax.servlet.http.HttpSession;
  */
 
 public class Login extends HttpServlet {
-
+    Privilages Priv = new Privilages();
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
@@ -44,10 +44,10 @@ public class Login extends HttpServlet {
         String user;
         String level;
         //for debug only
-        boolean UserExist = true;
+        boolean UserExist = Priv.doLogin(request.getParameter("username"), request.getParameter("password"));
         if (UserExist) {
             user = request.getParameter("username");
-            level = "admin";
+            level = Priv.Level;
         } else {
             user = null;
             level = null;
