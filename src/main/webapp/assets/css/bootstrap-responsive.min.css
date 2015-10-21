@@ -271,12 +271,14 @@
     {
         margin-left: 0;
     }
+    
     .row-fluid .custom1{
         margin-left:auto;  
         text-align: center; 
         margin-right: auto; 
         background-color: #fcfcfc; 
-        width: 600px; padding: 10px 
+        width: 600px; 
+        padding: 10px 
     }
     .row-fluid .custom2{
         margin-left:auto; 

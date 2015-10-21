@@ -17,25 +17,57 @@
 -->
 <!DOCTYPE html>
 
-    <html>
-        <head>            
-            <title>Data Pencarian</title>
-            <link id="bootstrap-style" href="assets/css/bootstrap.min.css" rel="stylesheet">
-            <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-            <link id="base-style" href="assets/css/style.css" rel="stylesheet">
-            <link id="base-style-responsive" href="assets/css/style-responsive.css" rel="stylesheet">
-            <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>       
-            
-        </head>
-        <body>            
-            <div class="container-fluid-full">
-                <h2>Data Penduduk</h2>
-                <div class="row-fluid">
-                    asdasdasd
+<html>
+    <head>            
+        <title>Data Pencarian</title>
+        <link id="bootstrap-style" href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link id="base-style" href="assets/css/style.css" rel="stylesheet">
+        <link id="base-style-responsive" href="assets/css/style-responsive.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>       
+
+    </head>
+    <body>            
+        <div class="container-fluid-full">
+            <div class="row-fluid" style="width: 90%;margin-left: auto; margin-right: auto; margin-bottom: 30px">
+                <div id="content" class="span10" style="padding-bottom: 30px">
+                    <ul class="breadcrumb">
+                        <h1>Data Penduduk</h1>
+                    </ul>                    
+                    <div style="width: 70%;float:left;padding-top: 20px ">
+                        <table border="0" style="min-width: 50%; padding: 5px; text-align: left ">                            
+                            <tbody>
+                                <tr>
+                                    <td><strong> NIK</strong></td>
+                                    <td>Berapa</td>
+                                </tr>
+                                <tr>
+                                    <td><strong> Nama</strong></td>
+                                    <td>Siapa</td>
+                                </tr>
+                                <tr>
+                                    <td><strong> TTL</strong></td>
+                                    <td>Dimana, kapan</td>
+                                </tr>
+                                <tr>
+                                    <td><strong> Kota</strong></td>
+                                    <td>Nama Kota</td>
+                                </tr>
+                                <tr>
+                                    <td><strong> Provinsi</strong></td>
+                                    <td>Nama Provinsi</td>
+                                </tr>                                
+                            </tbody>
+                        </table>                        
+                    </div>
+                    <div style="width: 30%;float:left;padding-top: 20px">
+                        foto
+                    </div>
                 </div>
             </div>
-            
-            
+        </div>
+
+
             <script src="assets/js/jquery-1.9.1.min.js"></script>
             <script src="assets/js/jquery-migrate-1.0.0.min.js"></script>
             <script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>
@@ -59,5 +91,5 @@
             <script src="assets/js/counter.js"></script>
             <script src="assets/js/retina.js"></script>
             <script src="assets/js/custom.js"></script>
-        </body>
-    </html>
+    </body>
+</html>

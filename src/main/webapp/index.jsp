@@ -98,8 +98,6 @@
 
                 <!-- start: Content -->
                 <div id="content" class="span10">
-
-
                     <ul class="breadcrumb">
                         <marquee direction="left" scrollamount="5" height="20px" width="100%" >Selamat datang di website eKaTePe. </marquee>
                     </ul>
