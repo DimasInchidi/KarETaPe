@@ -42,7 +42,7 @@ for(Cookie cookie : cookies){
         <marquee direction="left" scrollamount="5" height="30px" width="100%" >Selamat datang di website KarETaPe. </marquee>
     </ul>
 
-    <div class="row-fluid c ustom3">
+    <div class="row-fluid custom3">
         <p>eKaTePe 2.0 adalah sebuah sistem yang dibuat oleh LMT atau Lembuswana mudah tersakiti
             dengan tujuan untuk memaksimalkan program e-ktp yang telah dilaksanakan pemerintah Indonesia.</p>
         <p>Alasan sistem ini dibuat karena kurangnya implementasi dari e-ktp meskipun pada dasarnya
@@ -53,6 +53,9 @@ for(Cookie cookie : cookies){
         <br>
     </div>
     <hr>
+    <div class="row-fluid custom3a">
+    Jumlah Penduduk Indonesia Saat Ini = 
+    </div>
     <br>
     <div class="row-fluid custom1">
         <div class="row-fluid custom2">
