@@ -44,7 +44,7 @@
                                 <a class="btn" href="dashboard">
                                     <i class="halflings-icon white home"></i> Home
                                 </a>
-                            </li>                            
+                            </li>
                             </li>
                             <li class="dropdown">
                                 <a class="btn" href="#">
@@ -57,7 +57,7 @@
                             </li>
                             <li class="dropdown">
                                 <a class="btn dropdown-toggle">
-                                    <i class="halflings-icon white user"></i> Selamat Datang, <%=user %>                                    
+                                    <i class="halflings-icon white user"></i> Selamat Datang, <%=session.getAttribute("user")%>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-menu-title">
@@ -84,4 +84,4 @@
                     <h4 class="alert-heading">Warning!</h4>
                     <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
                 </div>
-                </noscript> 
+                </noscript>

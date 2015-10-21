@@ -34,7 +34,7 @@ for(Cookie cookie : cookies){
 }
 }
 %>
-<jsp:include page="plate/header.html" flush="true"/>
+<jsp:include page="plate/header.jsp" flush="true"/>
 <!-- start: Content -->
 <div id="content" class="span10">
     <ul class="breadcrumb">
@@ -47,10 +47,10 @@ for(Cookie cookie : cookies){
                     <strong><h2>Tambah Data Penduduk</h2></strong>
                 </div>
                 <div class="box-content">
-                    
-                    
+
+
                     <form action="" method="post">
-                        <table border="0" cellspacing="15" cellpadding="15" >                                
+                        <table border="0" cellspacing="15" cellpadding="15" >
                             <tbody>
                                 <tr>
                                     <td><strong>NIK</strong></td>
@@ -87,7 +87,7 @@ for(Cookie cookie : cookies){
                                 <tr>
                                     <td><strong>Alamat</strong></td>
                                     <td><textarea name="alamat" id="alamat" rows="3" placeholder="masukan alamat"></textarea></td>
-                                </tr>                                    
+                                </tr>
                                 <tr>
                                     <td><strong>RT</strong></td>
                                     <td><input type="text" name="rt" placeholder="masukan RT" /></td>
@@ -137,7 +137,7 @@ for(Cookie cookie : cookies){
                                     <td><select name="status" id="status" data-rel="chosen" >
                                             <option>Kawin</option>
                                             <option>Belum Kawin</option>
-                                            <option>bla bla</option>                                
+                                            <option>bla bla</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -145,10 +145,10 @@ for(Cookie cookie : cookies){
                                     <td><strong>Pekerjaan</strong></td>
                                     <td><select name="kerja" id="kerja" data-rel="chosen" >
                                             <option>PNS</option>
-                                            <option>SWASTA</option>                                                              
-                                            <option>PELAJAR</option>                                                              
-                                            <option>PENGANGGURAN</option>                                                              
-                                            <option>WIRASWASTA</option>                                                           
+                                            <option>SWASTA</option>
+                                            <option>PELAJAR</option>
+                                            <option>PENGANGGURAN</option>
+                                            <option>WIRASWASTA</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -156,7 +156,7 @@ for(Cookie cookie : cookies){
                                     <td><strong>Kewarganegaraan</strong></td>
                                     <td><select name="wrgnegara"  id="wrgnegara" data-rel="chosen" >
                                             <option>WNI</option>
-                                            <option>WNA</option>                                                              
+                                            <option>WNA</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -176,7 +176,7 @@ for(Cookie cookie : cookies){
                         </table>
                         <div class="form-actions">
                             <button type="submit" class="btn btn-primary">Save changes</button>
-                            
+
                         </div>
                     </form>
                 </div>
