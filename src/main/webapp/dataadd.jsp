@@ -16,7 +16,7 @@
  */
 -->
 
-<%--<%@ page language="java" contentType="text/html; charset=US-ASCII"
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
          pageEncoding="US-ASCII"%>
 <%
 //allow access only if session exists
@@ -34,7 +34,7 @@ for(Cookie cookie : cookies){
 }
 }
 <%=user %> <-- ini ditaro hbs selamat datang jgn lupa
-%>--%>
+%>
 <jsp:include page="plate/header.html" flush="true"/>
 <!-- start: Content -->
 <div id="content" class="span10">
