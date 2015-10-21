@@ -1,3 +1,21 @@
+<!--
+/*
+ * Copyright 2015 @Lembuswana Mudah Tersakiti.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+-->
+
 <%--<%@ page language="java" contentType="text/html; charset=US-ASCII"
          pageEncoding="US-ASCII"%>
 <%
@@ -17,172 +35,98 @@ for(Cookie cookie : cookies){
 }
 <%=user %> <-- ini ditaro hbs selamat datang jgn lupa
 %>--%>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+<jsp:include page="plate/header.html" flush="true"/>
+<!-- start: Content -->
+<div id="content" class="span10">
+    <ul class="breadcrumb">
+        <marquee direction="left" scrollamount="5" height="20px" width="100%" >Selamat datang di website KarETaPe. </marquee>
+    </ul>
+    <div class="row-fluid custom2">
+        <strong><h2>Tambah Data Penduduk</h2></strong>
+        <hr>
+        <form action="" method="post">
+            <table border="0" cellspacing="5" cellpadding="5" >                                
+                <tbody>
+                    <tr>
+                        <td><strong>NIK</strong></td>
+                        <td><input type="text" name="nik" placeholder="Isi dengan NIK" /></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Nama</strong></td>
+                        <td><input type="text" name="nik" placeholder="Isi dengan NIK" /></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tempat Lahir</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tanggal Lahir</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alamat</strong></td>
+                        <td></td>
+                    </tr>                                    
+                    <tr>
+                        <td><strong>RT</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kelurahan/Desa</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kecamatan</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kota</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Provinsi</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Agama</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Status Perkawinan</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Pekerjaan</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Kewarganegaraan</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Foto</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tanda Tangan</strong></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Sidik Jari</strong></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
 
-        <!-- start: Meta -->
-        <meta charset="utf-8">
+        </form>
+    </div>
 
-        <title>KarETaPe</title>
-        <meta name="description" content="eKaTePe">
-        <meta name="author" content="LMT">
-        <meta name="keyword" content="Metro, Metro UI, Dashboard, Bootstrap, Admin, Template, Theme, Responsive, Fluid, Retina">
+    <br>
 
-        <!-- end: Meta -->
+</div>
 
-        <!-- start: Mobile Specific -->
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- end: Mobile Specific -->
+</div>
 
-        <!-- start: CSS -->
-
-        <link id="bootstrap-style" href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <link id="base-style" href="assets/css/style.css" rel="stylesheet">
-        <link id="base-style-responsive" href="assets/css/style-responsive.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&subset=latin,cyrillic-ext,latin-ext' rel='stylesheet' type='text/css'>
-
-        <!-- end: CSS -->
-
-
-
-
-        <!-- start: Favicon -->
-        <link rel="shortcut icon" href="img/favicon.ico">
-        <!-- end: Favicon -->
-
-
-
-
-    </head>
-
-    <body>
-        <!-- start: Header -->
-        <div class="navbar">
-            <div class="navbar-inner">
-                <div class="container-fluid">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="index.jsp"><span>KarETaPe</span></a>
-
-                    <!-- start: Header Menu -->
-                    <div class="nav-no-collapse header-nav">
-
-                        <ul class="nav pull-right">
-                            <li>
-                                <a class="btn" href="welcome.jsp">
-                                    <i class="halflings-icon white home"></i> Home
-                                </a>
-                            </li>
-
-
-                            </li>
-                            <li class="dropdown">
-                                <a class="btn" href="#">
-                                    <i class="halflings-icon white list-alt"></i> Data Penduduk
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#"><i class="halflings-icon edit"></i> Tambah Data</a></li>
-                                    <li><a href="Logout"><i class="halflings-icon check"></i> Ubah Data</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown">
-                                <a class="btn dropdown-toggle">
-                                    <i class="halflings-icon white user"></i> Selamat Datang, LMT                                    
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li class="dropdown-menu-title">
-                                        <span>Account Settings</span>
-                                    </li>
-                                    <li><a href="#"><i class="halflings-icon user"></i> Profile</a></li>
-                                    <li><a href="Logout"><i class="halflings-icon off"></i> Logout</a></li>
-                                </ul>
-
-                            </li>
-                            <!-- end: User Dropdown -->
-                        </ul>
-                    </div>
-                    <!-- end: Header Menu -->
-
-                </div>
-            </div>
-        </div>
-        <!-- start: Header -->
-
-        <div class="container-fluid-full">
-            <div class="row-fluid" style="width: 90%;margin-left: auto; margin-right: auto; margin-bottom: 30px">
-
-                <noscript>
-                <div class="alert alert-block span10">
-                    <h4 class="alert-heading">Warning!</h4>
-                    <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
-                </div>
-                </noscript>
-
-                <!-- start: Content -->
-                <div id="content" class="span10">
-
-
-                    <ul class="breadcrumb">
-                        <marquee direction="left" scrollamount="5" height="20px" width="100%" >Selamat datang di website eKaTePe. </marquee>
-                    </ul>
-
-                    <div class="row-fluid custom3a">
-                        <strong><h2>Tambah Data Penduduk</h2></strong>
-                        <hr>
-                        <form action="" method="post">
-                            
-                        </form>
-                    </div>
-                    
-                    <br>
-                    
-                </div>
-
-            </div>
-
-        </div>
-        <footer>
-            <p>
-                <span style="text-align:left;float:right">&copy; 2015 | Lembuswana Mudah Tersakiti</span>
-            </p>
-        </footer>
-
-
-        <div class="clearfix"></div>
-
-
-
-        <!-- start: JavaScript-->
-        <script src="assets/js/forsearch.js"></script>
-        <script src="assets/js/jquery-1.9.1.min.js"></script>
-        <script src="assets/js/jquery-migrate-1.0.0.min.js"></script>
-        <script src="assets/js/jquery-ui-1.10.0.custom.min.js"></script>
-        <script src="assets/js/jquery.ui.touch-punch.js"></script>
-        <script src="assets/js/modernizr.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/jquery.cookie.js"></script>
-        <script src="assets/js/fullcalendar.min.js"></script>
-        <script src="assets/js/excanvas.js"></script>
-        <script src="assets/js/jquery.flot.js"></script>
-        <script src="assets/js/jquery.chosen.min.js"></script>
-        <script src="assets/js/jquery.uniform.min.js"></script>
-        <script src="assets/js/jquery.cleditor.min.js"></script>
-        <script src="assets/js/jquery.iphone.toggle.js"></script>
-        <script src="assets/js/jquery.uploadify-3.1.min.js"></script>
-        <script src="assets/js/jquery.gritter.min.js"></script>
-        <script src="assets/js/jquery.imagesloaded.js"></script>
-        <script src="assets/js/jquery.masonry.min.js"></script>
-        <script src="assets/js/jquery.knob.modified.js"></script>
-        <script src="assets/js/counter.js"></script>
-        <script src="assets/js/retina.js"></script>
-        <script src="assets/js/custom.js"></script>
-        <!-- end: JavaScript-->
-
-    </body>
-</html>
+</div>
+<jsp:include page="plate/footer.html" flush="true"/>
 
