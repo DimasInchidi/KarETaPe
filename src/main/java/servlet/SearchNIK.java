@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2015 DimasInchidi @ Lembuswana Mudah Tersakiti
+ * Copyright (C) 2015 dNaga
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,28 +15,34 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package servlet;
-
 import java.sql.ResultSet;
 
 /**
  *
- * @author DimasInchidi @ Lembuswana Mudah Tersakiti
+ * @author dNaga
  */
-public class Privilages extends DB_Transaction {
-    String User = "";
-    String Level = "";
-
-    public boolean doLogin(String Username, String Pass) {
-        String sql = "SELECT username, level FROM lmt_user WHERE nip = '"+Username+"' AND password = '"+Pass+"'";
+public class SearchNIK extends DB_Transaction{
+    String nama = "";
+    String kota = "";
+    String ttl = "";
+    String jk = "";
+    String foto = "";
+    
+       
+    public void Search(String NIK){
+        String sql= "SELECT Nama,kota,tanggal_lahir,sex,foto FROM lmt_ektp WHERE nik = '"+NIK+"'";
         try{
             ResultSet rs = super.Select(sql);
             while(rs.next()){
-                User = rs.getString(0);
-                Level = rs.getString(1);
+                nama = rs.getString(0);
+                kota = rs.getString(1);
+                ttl = rs.getString(2);
+                jk = rs.getString(3);
+                foto = rs.getString(4);
             }
         }catch(Exception ex){
-            return false;
+            System.out.println("Error : " + ex);
         }
-        return true;
     }
+    
 }
