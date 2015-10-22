@@ -48,11 +48,12 @@ public class DB_Transaction {
         return con;
     }
 
-    public ResultSet Select(String SQL) {
+    public ResultSet Select(String data, String table, String condition) {
         try {
+            String sql = "SELECT " + data + " FROM " + table + " " +condition;
             con = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = con.createStatement();
-            rs = stmt.executeQuery(SQL);
+            rs = stmt.executeQuery(sql);
         } catch (Exception ex) {
             rs = null;
         }

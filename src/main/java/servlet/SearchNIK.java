@@ -30,9 +30,9 @@ public class SearchNIK extends DB_Transaction{
     
        
     public void Search(String NIK){
-        String sql= "SELECT Nama,kota,tanggal_lahir,sex,foto FROM lmt_ektp WHERE nik = '"+NIK+"'";
+        String con= "WHERE nik = '"+NIK+"'";
         try{
-            ResultSet rs = super.Select(sql);
+            ResultSet rs = super.Select("*","lmt_ektp",con);
             while(rs.next()){
                 nama = rs.getString(0);
                 kota = rs.getString(1);

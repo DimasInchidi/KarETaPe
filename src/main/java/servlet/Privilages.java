@@ -27,9 +27,9 @@ public class Privilages extends DB_Transaction {
     String Level = "";
 
     public boolean doLogin(String Username, String Pass) {
-        String sql = "SELECT username, level FROM lmt_user WHERE nip = '"+Username+"' AND password = '"+Pass+"'";
+        String con = "WHERE nip = '"+Username+"' AND password = '"+Pass+"'";
         try{
-            ResultSet rs = super.Select(sql);
+            ResultSet rs = super.Select("username, level","lmt_user",con);
             while(rs.next()){
                 User = rs.getString(0);
                 Level = rs.getString(1);
