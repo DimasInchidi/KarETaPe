@@ -53,6 +53,7 @@ for(Cookie cookie : cookies){
         <br>
     </div>
     <hr>
+    <br>
     <div class="row-fluid custom3a">
         <label>Jumlah Penduduk Indonesia Saat Ini = </label>
     </div>
@@ -69,7 +70,7 @@ for(Cookie cookie : cookies){
                 <label><B>NIK</B></label>
                 <input type="text" name="nik" id="nik" placeholder="Isi dengan NIK" />
                 <br>
-                <a class="btn btn-primary" type="submit" style="width: 70px" href="search.jsp" onclick="return popitupsmall('search.jsp')">
+                <a class="btn btn-primary" type="submit" style="width: 70px" href="searchin.jsp" onclick="return popitupsmall('searchin.jsp')">
                     <i class="halflings-icon white search"></i>Cari</a>
             </form>
         </div>

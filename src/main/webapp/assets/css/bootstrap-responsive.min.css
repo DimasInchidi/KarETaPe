@@ -300,7 +300,8 @@
     }
     .row-fluid .custom3a{
         text-align:left; 
-        width:80%; margin-left:auto;
+        width:80%; 
+        margin-left:auto;
         margin-right:auto
     }
     .row-fluid .controls-row [class*="span"]+[class*="span"]
