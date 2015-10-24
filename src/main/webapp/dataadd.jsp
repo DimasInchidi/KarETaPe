@@ -34,6 +34,11 @@ for(Cookie cookie : cookies){
 }
 }
 %>
+<%@ page language="java" import="servlet.DB_Transaction"%>
+<%@ page import="java.sql.*"%>
+<%
+DB_Transaction db = new DB_Transaction();
+%>
 <jsp:include page="plate/header.jsp" flush="true"/>
 <!-- start: Content -->
 <div id="content" class="span10">
@@ -94,11 +99,24 @@ for(Cookie cookie : cookies){
                                 <tr>
                                     <td><strong>Agama</strong></td>
                                     <td><select name="agama" id="agama" data-rel="chosen" >
-                                            <option value="1">Islam</option>
-                                            <option value="2">Katholik</option>
-                                            <option value="3">Protestan</option>
-                                            <option value="4">Hindu</option>
-                                            <option value="5">Budha</option>
+                                            <%
+try{
+    Connection cn = db.F_Koneksi();
+    PreparedStatement ps = cn.prepareStatement("SELECT id_agm,desk FROM lmt_agama");
+    ResultSet res = ps.executeQuery();
+    String id;
+    String agama;
+    while(res.next()){
+        id = res.getString(1);
+        agama = res.getString(2);
+        out.print("<option value='"+id+"'>"+agama+"</option>");
+    }
+    cn.close();
+}catch(Exception e){
+    out.print(e);
+}
+
+                                            %>
                                         </select>
                                     </td>
                                 </tr>
@@ -114,11 +132,23 @@ for(Cookie cookie : cookies){
                                 <tr>
                                     <td><strong>Pekerjaan</strong></td>
                                     <td><select name="kerja" id="kerja" data-rel="chosen" >
-                                            <option value="1">PNS</option>
-                                            <option value="2">Swasta</option>
-                                            <option value="3">Pelajar</option>
-                                            <option value="4">Wiraswasta</option>
-                                            <option value="5">Tidak Bekerja</option>
+                                             <%
+try{
+    Connection cn = db.F_Koneksi();
+    PreparedStatement ps = cn.prepareStatement("SELECT id_kerja,desk FROM lmt_kerja");
+    ResultSet res = ps.executeQuery();
+    String id;
+    String kerja;
+    while(res.next()){
+        id = res.getString(1);
+        kerja = res.getString(2);
+        out.print("<option value='"+id+"'>"+kerja+"</option>");
+    }
+    cn.close();
+}catch(Exception e){
+    out.print(e);
+}
+                                            %>
                                         </select>
                                     </td>
                                 </tr>
@@ -152,7 +182,25 @@ for(Cookie cookie : cookies){
                                 </tr>
                                 <tr>
                                     <td><strong>Provinsi</strong></td>
-                                    <td><input type="text" name="provinsi" placeholder="Nama Provinsi" />
+                                    <td><select name="provinsi" id="provinsi" data-rel="chosen" >
+                                             <%
+try{
+    Connection cn = db.F_Koneksi();
+    PreparedStatement ps = cn.prepareStatement("SELECT * FROM master_provinsi");
+    ResultSet res = ps.executeQuery();
+    String id;
+    String prov;
+    while(res.next()){
+        id = res.getString(1);
+        prov = res.getString(2);
+        out.print("<option value='"+id+"'>"+prov+"</option>");
+    }
+    cn.close();
+}catch(Exception e){
+    out.print(e);
+}
+                                            %>
+                                        </select>
                                     </td>
                                 </tr>
                                 <tr>
