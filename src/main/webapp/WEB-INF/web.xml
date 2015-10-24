@@ -23,6 +23,11 @@
         <servlet-name>Search Page</servlet-name>
         <jsp-file>/searchin.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <description>Insert penduduk data to DB</description>
+        <servlet-name>InsPenduduk</servlet-name>
+        <servlet-class>servlet.InsPend</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -42,6 +47,10 @@
     <servlet-mapping>
         <servlet-name>Search Page</servlet-name>
         <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InsPenduduk</servlet-name>
+        <url-pattern>/inpend</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

@@ -30,7 +30,7 @@ import javax.servlet.http.HttpServletResponse;
  * @author dNaga
  */
 
-@WebServlet("/uploadServlet")
+@WebServlet("/inuser")
 @MultipartConfig(maxFileSize = 16177215)
 
 public class InsUser extends HttpServlet{
