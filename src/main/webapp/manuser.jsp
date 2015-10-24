@@ -47,7 +47,7 @@ for(Cookie cookie : cookies){
             <a class="btn btn-primary" data-toggle="modal" data-target="#modals">
                 <i class="halflings-icon white plus"></i>Tambah User
             </a>        
-            <table class="table table-condensed" border="0" cellspacing="15" cellpadding="15" style="margin-top: 20px;margin-bottom: 50px">
+            <table class="table table-condensed" border="0" cellspacing="15" cellpadding="15" style="margin-top: 20px;margin-bottom: 120px">
                 <thead>
                     <tr>
                         <th>NIK</th>
