@@ -82,10 +82,10 @@ public class DB_Transaction {
         }
     }
 
-    public boolean Insert(String data, String table) {
+    public boolean Insert(String table, String data) {
         try {
             con = F_Koneksi();
-            String sql = "INSERT INTO " + table + " VALUE " + data;
+            String sql = "INSERT INTO " + table + " VALUE (" + data + ")";
             stmt = con.createStatement();
             stmt.executeQuery(sql);
             con.close();

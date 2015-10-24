@@ -81,6 +81,17 @@ for(Cookie cookie : cookies){
                                         </label></td>
                                 </tr>
                                 <tr>
+                                    <td><strong>Golongan Daarah</strong></td>
+                                    <td><select name="gold" id="gold" data-rel="chosen" >
+                                            <option value="-">-</option>
+                                            <option value="A">A</option>
+                                            <option value="B">B</option>
+                                            <option value="AB">ABO</option>
+                                            <option value="O">O</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td><strong>Agama</strong></td>
                                     <td><select name="agama" id="agama" data-rel="chosen" >
                                             <option value="1">Islam</option>
@@ -122,31 +133,31 @@ for(Cookie cookie : cookies){
                                 </tr>
                                 <tr>
                                     <td><strong>RW</strong></td>
-                                    <td><input type="text" name="rt" placeholder="No RW" /></td>
+                                    <td><input type="text" name="rw" placeholder="No RW" /></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Kelurahan/Desa</strong></td>
-                                    <td><input type="text" name="lahir" placeholder="Nama Kelurahan" />
+                                    <td><input type="text" name="lurah" placeholder="Nama Kelurahan" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Kecamatan</strong></td>
-                                    <td><input type="text" name="lahir" placeholder="Nama Kecamatan" />
+                                    <td><input type="text" name="kec" placeholder="Nama Kecamatan" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Kota/Kabupaten</strong></td>
-                                    <td><input type="text" name="lahir" placeholder="Nama Kota/Kabupaten" />
+                                    <td><input type="text" name="kota" placeholder="Nama Kota/Kabupaten" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Provinsi</strong></td>
-                                    <td><input type="text" name="lahir" placeholder="Nama Provinsi" />
+                                    <td><input type="text" name="provinsi" placeholder="Nama Provinsi" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Kewarganegaraan</strong></td>
-                                    <td><select name="wrgnegara"  id="wrgnegara" data-rel="chosen" >
+                                    <td><select name="warga"  id="warga" data-rel="chosen" >
                                             <option value="1">WNI</option>
                                             <option value="0">WNA</option>
                                         </select>
