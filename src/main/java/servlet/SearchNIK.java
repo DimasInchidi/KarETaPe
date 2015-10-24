@@ -42,6 +42,7 @@ public class SearchNIK extends DB_Transaction{
     String foto = "";
     String sidik = "";
     String ttd = "";
+    String gol = "";
     
        
     public void SearchNIK(String NIK){
@@ -76,37 +77,7 @@ public class SearchNIK extends DB_Transaction{
                 foto = rs.getString(17);
                 sidik = rs.getString(18);
                 ttd = rs.getString(19);
-            }
-        }catch(Exception ex){
-            System.out.println("Error : " + ex);
-        }
-    }
-    
-    String NIK = ""; String namaU = ""; String jabatan = ""; String kel = ""; String kec = ""; String kot = ""; String prov = "";
-    String lv = "";
-    
-    public void SerachUser(String nip){
-        String con= " WHERE nip = '"+nip+"'";
-        try{
-            ResultSet rs = super.Select("lmt_detail_user.NIK,"
-                    + "lmt.detail_user.nama,"
-                    + "lmt_user.level,"
-                    + "lmt_detail_user.jabatan,"
-                    + "lmt_detail_user.kelurahan,"
-                    + "lmt_detail_user.kecamatan,"
-                    + "lmt_detail_user.kota,"
-                    + "lmt_detail_user.provinsi",
-                    "lmt_detail_user INNER JOIN lmt_user ON lmt_detail_user.nip = lmt_user.nip",
-                    con);
-            while(rs.next()){
-                NIK = rs.getString(0);
-                namaU = rs.getString(1);
-                lv = rs.getString(2);
-                jabatan = rs.getString(3);
-                kel = rs.getString(4);
-                kec = rs.getString(5);
-                kot = rs.getString(6);
-                prov = rs.getString(7);
+                gol = rs.getString(20);
             }
         }catch(Exception ex){
             System.out.println("Error : " + ex);
