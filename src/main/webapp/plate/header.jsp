@@ -52,7 +52,7 @@
                                 </a>                                
                             </li>
                             <li>
-                                <a class="btn" href="#">
+                                <a class="btn" href="search">
                                     <i class="halflings-icon white search"></i> Pencarian
                                 </a>                                
                             </li>
