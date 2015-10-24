@@ -81,6 +81,38 @@ for(Cookie cookie : cookies){
                                         </label></td>
                                 </tr>
                                 <tr>
+                                    <td><strong>Agama</strong></td>
+                                    <td><select name="agama" id="agama" data-rel="chosen" >
+                                            <option value="1">Islam</option>
+                                            <option value="2">Katholik</option>
+                                            <option value="3">Protestan</option>
+                                            <option value="4">Hindu</option>
+                                            <option value="5">Budha</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Status Perkawinan</strong></td>
+                                    <td><select name="status" id="status" data-rel="chosen" >
+                                            <option value="1">Belum Kawin</option>
+                                            <option value="2">Kawin</option>
+                                            <option value="3">Lainnya</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pekerjaan</strong></td>
+                                    <td><select name="kerja" id="kerja" data-rel="chosen" >
+                                            <option value="1">PNS</option>
+                                            <option value="2">Swasta</option>
+                                            <option value="3">Pelajar</option>
+                                            <option value="4">Wiraswasta</option>
+                                            <option value="5">Tidak Bekerja</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr><td colspan="3"><hr style="border-top:1px solid #578EBE"></td></tr>
+                                <tr>
                                     <td><strong>Alamat</strong></td>
                                     <td><textarea name="alamat" id="alamat" rows="3" placeholder="Alamat"></textarea></td>
                                 </tr>
@@ -113,41 +145,10 @@ for(Cookie cookie : cookies){
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Agama</strong></td>
-                                    <td><select name="agama" id="agama" data-rel="chosen" >
-                                            <option value="1">Islam</option>
-                                            <option value="2">Katholik</option>
-                                            <option value="3">Protestan</option>
-                                            <option value="4">Hindu</option>
-                                            <option value="5">Budha</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Status Perkawinan</strong></td>
-                                    <td><select name="status" id="status" data-rel="chosen" >
-                                            <option value="1">Belum Kawin</option>
-                                            <option value="2">Kawin</option>
-                                            <option value="3">Lainnya</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><strong>Pekerjaan</strong></td>
-                                    <td><select name="kerja" id="kerja" data-rel="chosen" >
-                                            <option>PNS</option>
-                                            <option>Swasta</option>
-                                            <option>Pelajar</option>
-                                            <option>Wiraswasta</option>
-                                            <option>Tidak Bekerja</option>
-                                        </select>
-                                    </td>
-                                </tr>
-                                <tr>
                                     <td><strong>Kewarganegaraan</strong></td>
                                     <td><select name="wrgnegara"  id="wrgnegara" data-rel="chosen" >
-                                            <option>WNI</option>
-                                            <option>WNA</option>
+                                            <option value="1">WNI</option>
+                                            <option value="0">WNA</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -163,6 +164,7 @@ for(Cookie cookie : cookies){
                                     <td><strong>Sidik Jari</strong></td>
                                     <td><input name="sjari" class="input-file uniform_on" id="fileInput2" type="file"></td>
                                 </tr>
+                                <tr><td colspan="3"><hr style="border-top:1px solid #578EBE"></td></tr>
                                 <tr>
                                     <td><strong>Status</strong></td>
                                     <td>
