@@ -52,14 +52,16 @@ for(Cookie cookie : cookies){
                     <tr>
                         <th>NIK</th>
                         <th>NIP</th>
-                        <th>Nama</th>                        
+                        <th>Nama</th>
+                        <th>Jabatan</th>
                         <th>Aksi</th>
                     </tr>
                 </thead>            
                 <tbody>
                 <td class="center"></td>
                 <td class="center"></td>
-                <td class="center"></td>                
+                <td class="center"></td>
+                <td class="center"></td>   
                 <td class="center">                
                     <a class="btn btn-info" href="#">
                         <i class="halflings-icon white edit"></i>  
@@ -80,7 +82,7 @@ for(Cookie cookie : cookies){
 <div class="modal hide fade" id="modals">
     <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal">X</button>
-        <h3>Tambah User</h3>
+        <h3>Tambah Operator</h3>
     </div>
     <div class="modal-body">
         <div class="row-fluid">
@@ -90,21 +92,20 @@ for(Cookie cookie : cookies){
                         <tbody>
                             <tr>
                                 <td><strong>NIK</strong></td>
-                                <td><input class="input-large" name="nik" id="username" type="text" /></td>
+                                <td><input class="input-large" name="nik" id="nik" type="text" /></td>
                             </tr>
                             <tr>
                                 <td><strong>NIP (Opsional)</strong></td>
-                                <td><input class="input-large" name="nip" id="username" type="text"/></td>
+                                <td><input class="input-large" name="nip" id="nip" type="text"/></td>
                             </tr>
                             <tr>
                                 <td><strong>Jabatan</strong></td>
-                                <td><input class="input-large" name="jabatan" id="username" type="text"/></td>
+                                <td><input class="input-large" name="jabatan" id="jabatan" type="text"/></td>
                             </tr>
                             <tr>
                                 <td><strong>Password</strong></td>
-                                <td><input class="input-large" name="pass" id="username" type="password"/></td>
-                            </tr>
-                            
+                                <td><input class="input-large" name="pass" id="pass" type="password"/></td>
+                            </tr>                            
                         </tbody>
                     </table>
                 </fieldset>            

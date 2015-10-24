@@ -92,19 +92,19 @@ for(Cookie cookie : cookies){
                         <tbody>
                             <tr>
                                 <td><strong>NIK</strong></td>
-                                <td><input class="input-large" name="nik" id="username" type="text" /></td>
+                                <td><input class="input-large" name="nik" id="nik" type="text" /></td>
                             </tr>
                             <tr>
                                 <td><strong>NIP (Opsional)</strong></td>
-                                <td><input class="input-large" name="nip" id="username" type="text"/></td>
+                                <td><input class="input-large" name="nip" id="nip" type="text"/></td>
                             </tr>
                             <tr>
                                 <td><strong>Jabatan</strong></td>
-                                <td><input class="input-large" name="jabatan" id="username" type="text"/></td>
+                                <td><input class="input-large" name="jabatan" id="jabatan" type="text"/></td>
                             </tr>
                             <tr>
                                 <td><strong>Password</strong></td>
-                                <td><input class="input-large" name="pass" id="username" type="password"/></td>
+                                <td><input class="input-large" name="pass" id="pass" type="password"/></td>
                             </tr>
                             <tr>
                                 <td><strong>Level</strong></td>
