@@ -52,7 +52,7 @@ DB_Transaction db = new DB_Transaction();
                     <strong><h2>Tambah Data Penduduk</h2></strong>
                 </div>
                 <div class="box-content">
-                    <form action="" method="post">
+                    <form action="inuser" method="post" enctype="multipart/form-data">
                         <table border="0" cellspacing="15" cellpadding="15" >
                             <tbody>
                                 <tr>
