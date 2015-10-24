@@ -63,9 +63,17 @@
                             {
                             out.print("<li>");
                             out.print("<a class='btn' href=''>");
-                            out.print("<i class='halflings-icon white cog'></i> Manajemen");
+                            out.print("<i class='halflings-icon white cog'></i> Manajemen User");
                             out.print("</a>");                             
                             out.print("</li>");
+                            }else if(prev.equals("2")){
+                            out.print("<li>");
+                            out.print("<a class='btn' href=''>");
+                            out.print("<i class='halflings-icon white cog'></i> Data Operator");
+                            out.print("</a>");                             
+                            out.print("</li>");
+                            }else {
+
                             }
                             }
                             catch (Exception e){

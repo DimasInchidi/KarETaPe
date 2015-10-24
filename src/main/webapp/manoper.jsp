@@ -42,26 +42,24 @@ for(Cookie cookie : cookies){
     </ul>
     <div class="row-fluid custom2">
         <div class="row-fluid sortable">                    
-            <strong><h2>Manajemen User</h2></strong>
+            <strong><h2>Data Operator</h2></strong>
             <hr style="border-top:2px solid #578EBE;margin-bottom: 20px">        
             <a class="btn btn-primary" data-toggle="modal" data-target="#modals">
-                <i class="halflings-icon white plus"></i>Tambah User
+                <i class="halflings-icon white plus"></i>Tambah Operator
             </a>        
             <table class="table table-condensed" border="0" cellspacing="15" cellpadding="15" style="margin-top: 20px;margin-bottom: 120px">
                 <thead>
                     <tr>
                         <th>NIK</th>
                         <th>NIP</th>
-                        <th>Nama</th>
-                        <th>Level</th>
+                        <th>Nama</th>                        
                         <th>Aksi</th>
                     </tr>
                 </thead>            
                 <tbody>
                 <td class="center"></td>
                 <td class="center"></td>
-                <td class="center"></td>
-                <td class="center"></td>
+                <td class="center"></td>                
                 <td class="center">                
                     <a class="btn btn-info" href="#">
                         <i class="halflings-icon white edit"></i>  
@@ -106,14 +104,7 @@ for(Cookie cookie : cookies){
                                 <td><strong>Password</strong></td>
                                 <td><input class="input-large" name="pass" id="username" type="password"/></td>
                             </tr>
-                            <tr>
-                                <td><strong>Level</strong></td>
-                                <td><select name="lvl" id="lvl" data-rel="chosen" >
-                                        <option value="1">Super User</option>
-                                        <option value="2">Administrator</option>
-                                        <option value="3">Operator</option>                                        
-                                    </select></td>
-                            </tr>
+                            
                         </tbody>
                     </table>
                 </fieldset>            
