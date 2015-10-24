@@ -54,7 +54,7 @@ for(Cookie cookie : cookies){
     </div>
     <hr>
     <br>
-    <div class="row-fluid custom3a">
+    <div class="row-fluid custom3a" style="background: red">
         <label>Jumlah Penduduk Indonesia Saat Ini = </label>
     </div>
     <br>

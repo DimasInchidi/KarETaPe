@@ -5,12 +5,13 @@
 	.container-fluid-full {
 		overflow: hidden;
 		position: relative;
-		height: 100%;
+		min-height: 100%;
 		min-width: 100%
 	}
 	
 	#content {
 		width: 100%;
+                height: 100%;
 		padding: 28px;
 		margin-right: auto;
 		margin-left: auto;
@@ -42,11 +43,13 @@
 	.container-fluid-full {
 		overflow: hidden;
 		position: relative;
-		height: 100%;
+		min-height: 100%;
+		min-width: 100%
 	}
 	
 	#content {
 		width: 85%;
+                height: 85%;
 		padding: 20px;
 		margin: 0px auto;
 	}
@@ -141,11 +144,13 @@
 	.container-fluid-full {
 		overflow: hidden;
 		position: relative;
-		height: 100%;
+		min-height: 100%;
+		min-width: 100%
 	}
 	
 	#content {
 		width: 91.666%;
+                height: 91.666%;
 		padding: 22px;
 		margin: 0px 0px;
 		margin-left: 8.334% !important;
