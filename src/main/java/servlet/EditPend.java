@@ -34,7 +34,6 @@ public class EditPend extends HttpServlet{
             throws ServletException, IOException{
         String nik,nama,tampatl,tl,jk,hidup,alamat, rt,rw,kel,kec;
         String prov,kota,agama,status,pekerjaan,warga,foto,sidik,ttd,gol;
-        HttpSession session = request.getSession(true);
                 
         nik = request.getParameter("nik");
         nama = request.getParameter("nama");

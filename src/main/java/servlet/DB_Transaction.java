@@ -98,7 +98,7 @@ public class DB_Transaction {
     public boolean Delete(String table, String condition) {
         try {
             con = F_Koneksi();
-            String sql = "DELETE FROM " + table + " WHERE " + condition;
+            String sql = "DELETE FROM " + table + " WHERE nik='" + condition + "'";
             stmt = con.createStatement();
             stmt.executeUpdate(sql);
             con.close();
