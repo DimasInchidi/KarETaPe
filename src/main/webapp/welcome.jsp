@@ -36,6 +36,7 @@ for(Cookie cookie : cookies){
 %>
 
 <jsp:include page="plate/header.jsp" flush="true"/>
+
 <!-- start: Content -->
 <div id="content" class="span10">
     <ul class="breadcrumb">

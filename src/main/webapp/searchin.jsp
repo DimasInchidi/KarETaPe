@@ -80,7 +80,7 @@ for(Cookie cookie : cookies){
                 </div>
                 <div class="form-actions">
                 <a href="" type="button" class="btn btn-primary">Ubah</a>
-                <a href="" type="button" class="btn btn-inverse">Cetak</a>
+                <a href="search.jsp" type="button" class="btn btn-inverse">Cetak</a>
                 </div>
             </fieldset>
         </form>

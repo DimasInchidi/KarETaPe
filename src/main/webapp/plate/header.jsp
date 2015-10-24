@@ -56,6 +56,21 @@
                                     <i class="halflings-icon white search"></i> Pencarian
                                 </a>                                
                             </li>
+                            <%
+                            try{
+                            String prev=(String)session.getAttribute("level");                            
+                            if(prev.equals("1"))
+                            {
+                            out.print("<li>");
+                            out.print("<a class='btn' href=''>");
+                            out.print("<i class='halflings-icon white cog'></i> Manajemen");
+                            out.print("</a>");                             
+                            out.print("</li>");
+                            }
+                            }
+                            catch (Exception e){
+                            }                                                     
+                            %>
                             <li class="dropdown">
                                 <a class="btn dropdown-toggle">
                                     <i class="halflings-icon white user"></i> Selamat Datang, <%=session.getAttribute("user")%>
