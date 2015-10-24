@@ -27,7 +27,7 @@ public class Privilages extends DB_Transaction {
     String Level = "";
 
     public boolean doLogin(String Username, String Pass) {
-        String con = "WHERE nip = '"+Username+"' AND password = '"+Pass+"'";
+        String con = "WHERE nip = '" + Username + "' AND password = md5('" + Pass + "')";
         try{
             ResultSet rs = super.Select("username, level","lmt_user",con);
             while(rs.next()){

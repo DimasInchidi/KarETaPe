@@ -29,6 +29,7 @@ import java.sql.Statement;
 public class DB_Transaction {
 
     private static final String JDBC_DRIVER = "org.postgresql.Driver";
+    //db host dll di ubah
     private static final String DB_URL = "jdbc:postgresql://ec2-54-204-15-48.compute-1.amazonaws.com:5432/d43cvp6kpf1the";
     private static final String USER = "khwivmymedwodp";
     private static final String PASS = "rnNyTeGxo0PCll83A-6Db__n4v";
@@ -50,7 +51,7 @@ public class DB_Transaction {
 
     public ResultSet Select(String data, String table, String condition) {
         try {
-            String sql = "SELECT " + data + " FROM " + table + " " +condition;
+            String sql = "SELECT " + data + " FROM " + table + " " + condition;
             con = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = con.createStatement();
             rs = stmt.executeQuery(sql);
@@ -60,11 +61,38 @@ public class DB_Transaction {
         return rs;
     }
 
-    public boolean Update(String SQL) {
+    public boolean Update(String data, String table, String condition) {
         try {
+            String sql = "UPDATE " + table + " SET " + data + " WHERE " + condition;
             con = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = con.createStatement();
-            stmt.executeUpdate(SQL);
+            stmt.executeUpdate(sql);
+            con.close();
+            return true;
+        } catch (Exception ex) {
+            return false;
+        }
+    }
+    
+    public boolean Insert(String data, String table){
+        try{
+            String sql = "INSERT INTO " + table + " VALUE " + data;
+            con = DriverManager.getConnection(DB_URL, USER, PASS);
+            stmt = con.createStatement();
+            stmt.executeUpdate(sql);
+            con.close();
+            return true;
+        }catch(Exception ex){
+            return false;
+        }
+    }
+    
+    public boolean Delete(String table, String condition){
+        try {
+            String sql = "DELETE FROM " + table + " WHERE " + condition;
+            con = DriverManager.getConnection(DB_URL, USER, PASS);
+            stmt = con.createStatement();
+            stmt.executeUpdate(sql);
             con.close();
             return true;
         } catch (Exception ex) {
