@@ -282,9 +282,16 @@
     .row-fluid .custom1a{
         margin-left:auto;  
         text-align: left; 
-        margin-right: auto; 
+        margin-right: auto;         
         background-color: #fcfcfc; 
         width: 600px; 
+        padding: 10px 
+    }
+    .row-fluid .custom1b{
+        margin-left:auto;  
+        text-align: center; 
+        margin-right: auto;        
+        width: 100%; 
         padding: 10px 
     }
     .row-fluid .custom4
@@ -742,8 +749,15 @@
         margin-left:auto;  
         text-align: left; 
         margin-right: auto; 
-        background-color: #fcfcfc; 
         width: 600px; 
+        padding: 10px 
+    }
+    .row-fluid .custom1b{
+        margin-left:auto;  
+        text-align: center; 
+        margin-right: auto; 
+        background-color: #fcfcfc; 
+        width: 100%; 
         padding: 10px 
     }
     .row-fluid .custom4
@@ -1072,6 +1086,13 @@
         margin-right: auto; 
         background-color: #fcfcfc; 
         width: 600px; 
+        padding: 10px 
+    }
+    .row-fluid .custom1b{
+        margin-left:auto;  
+        text-align: center; 
+        margin-right: auto; 
+        width: 100%; 
         padding: 10px 
     }
     .row-fluid .custom4

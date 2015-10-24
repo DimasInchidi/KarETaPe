@@ -60,7 +60,7 @@
                             </table>                        
                         </div>
                         <div style="padding-top: 90px; padding-left: 400px; width: 30%;position: absolute "> 
-                            <img src="assets/img/kafi.png" style="width: 100px;">
+                            <img src="" style="width: 100px;">
                         </div>
                     </div>
                     <div class="row-fluid custom4a">

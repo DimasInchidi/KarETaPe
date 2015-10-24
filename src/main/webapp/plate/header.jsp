@@ -66,9 +66,9 @@
                             out.print("<i class='halflings-icon white cog'></i> Manajemen");
                             out.print("</a>");
                             out.print("<ul class='dropdown-menu'>");                             
-                            out.print("<li><a href='#'><i class='halflings-icon user'></i> Data User</a></li>");                             
-                            out.print("<li><a href='#'><i class='halflings-icon briefcase'></i> Data Operator</a></li>");                            
-                            out.print("<li><a href='#'><i class='halflings-icon th-list'></i> Data Parameter</a></li>");                             
+                            out.print("<li><a href='manage-user'><i class='halflings-icon user'></i> Data User</a></li>");                             
+                            out.print("<li><a href='manage-op'><i class='halflings-icon briefcase'></i> Data Operator</a></li>");                            
+                            out.print("<li><a href='parameter'><i class='halflings-icon th-list'></i> Data Parameter</a></li>");                             
                             out.print("</ul>");
                             out.print("</li>");
                             }else if(prev.equals("2")){
@@ -77,8 +77,8 @@
                             out.print("<i class='halflings-icon white cog'></i> Manajemen");
                             out.print("</a>");
                             out.print("<ul class='dropdown-menu'>");
-                            out.print("<li><a href='#'><i class='halflings-icon briefcase'></i> Data Operator</a></li>");                            
-                            out.print("<li><a href='#'><i class='halflings-icon th-list'></i> Data Parameter</a></li>");                             
+                            out.print("<li><a href='manage-op'><i class='halflings-icon briefcase'></i> Data Operator</a></li>");                            
+                            out.print("<li><a href='parameter'><i class='halflings-icon th-list'></i> Data Parameter</a></li>");                             
                             out.print("</ul>");
                             out.print("</li>");
                             }else {
