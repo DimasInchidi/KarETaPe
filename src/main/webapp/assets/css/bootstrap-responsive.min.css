@@ -244,7 +244,7 @@
         width: 100%;
         zoom: 1;
     }
-   
+    
     .row-fluid:before,.row-fluid:after
     {
         content: "";
@@ -271,7 +271,15 @@
     {
         margin-left: 0;
     }
-    
+    .row-fluid .custom4
+    {
+        background-color: #000;
+        background: url("../img/ganteng.png") no-repeat;        
+        width: 90%;
+        height: 330px;
+        margin-left: auto;          
+        margin-right: auto              
+    }
     .row-fluid .custom1{
         margin-left:auto;  
         text-align: center; 
@@ -279,7 +287,7 @@
         background-color: #fcfcfc; 
         width: 600px; 
         padding: 10px 
-    }
+    }    
     .row-fluid .custom1a{
         margin-left:auto;  
         text-align: left; 
@@ -287,6 +295,15 @@
         background-color: #fcfcfc; 
         width: 600px; 
         padding: 10px 
+    }
+    .row-fluid .custom4
+    {
+        background-color: #fff;
+        background: url("../img/ganteng.png") no-repeat;        
+        width: 90%;
+        height: 330px;
+        margin-left: auto;          
+        margin-right: auto              
     }
     .row-fluid .custom2{
         margin-left:auto; 
@@ -304,6 +321,7 @@
         margin-left:auto;
         margin-right:auto
     }
+
     .row-fluid .controls-row [class*="span"]+[class*="span"]
     {
         margin-left: 2.564102564102564%;
@@ -710,6 +728,15 @@
     {
         margin-left: 0;
     }
+    .row-fluid .custom4
+    {
+        background-color: #fff;
+        background: url("../img/ganteng.png") no-repeat;        
+        width: 90%;
+        height: 330px;
+        margin-left: auto;          
+        margin-right: auto              
+    }
     .row-fluid .controls-row [class*="span"]+[class*="span"]
     {
         margin-left: 2.7624309392265194%;
@@ -985,6 +1012,16 @@
     .row-fluid
     {
         width: 100%;
+    }
+    .row-fluid .custom4
+    {
+        background-color: #fff;
+        background: url("../img/ganteng.png") no-repeat;        
+        width: 90%;
+        height: 330px;
+        margin-bottom: 30px;
+        margin-left: auto;          
+        margin-right: auto              
     }
     .row,.thumbnails
     {
