@@ -59,7 +59,14 @@ for(Cookie cookie : cookies){
     </div>
     <br>
     <hr style="border-top:2px solid #578EBE">
-    
+    <div class="row-fluid custom1">
+        <div class="span8 widget blueDark" onTablet="span7" onDesktop="span8">                   
+            DOWNLOAD APK                        
+        </div> 
+        <p>Download Aplikasi Mobile KaReTaPe v1.0  disini</p>
+        <a class="btn btn-danger" type="button" style="width: 70px" href="#">Download</a>
+    </div>F
+
 </div>
 
 </div>
