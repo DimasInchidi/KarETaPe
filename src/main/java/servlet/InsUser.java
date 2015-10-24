@@ -18,6 +18,8 @@ package servlet;
 
 import java.io.IOException;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -27,6 +29,10 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author dNaga
  */
+
+@WebServlet("/uploadServlet")
+@MultipartConfig(maxFileSize = 16177215)
+
 public class InsUser extends HttpServlet{
     DB_Transaction db = new DB_Transaction();
     
