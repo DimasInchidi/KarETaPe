@@ -61,16 +61,25 @@
                             String prev=(String)session.getAttribute("level");                            
                             if(prev.equals("1"))
                             {
-                            out.print("<li>");
-                            out.print("<a class='btn' href=''>");
-                            out.print("<i class='halflings-icon white cog'></i> Manajemen User");
-                            out.print("</a>");                             
+                            out.print("<li class='dropdown'>");
+                            out.print("<a class='btn dropdown-toggle'>");
+                            out.print("<i class='halflings-icon white cog'></i> Manajemen");
+                            out.print("</a>");
+                            out.print("<ul class='dropdown-menu'>");                             
+                            out.print("<li><a href='#'><i class='halflings-icon user'></i> Data User</a></li>");                             
+                            out.print("<li><a href='#'><i class='halflings-icon briefcase'></i> Data Operator</a></li>");                            
+                            out.print("<li><a href='#'><i class='halflings-icon th-list'></i> Data Parameter</a></li>");                             
+                            out.print("</ul>");
                             out.print("</li>");
                             }else if(prev.equals("2")){
-                            out.print("<li>");
-                            out.print("<a class='btn' href=''>");
-                            out.print("<i class='halflings-icon white cog'></i> Data Operator");
-                            out.print("</a>");                             
+                            out.print("<li class='dropdown'>");
+                            out.print("<a class='btn dropdown-toggle'>");
+                            out.print("<i class='halflings-icon white cog'></i> Manajemen");
+                            out.print("</a>");
+                            out.print("<ul class='dropdown-menu'>");
+                            out.print("<li><a href='#'><i class='halflings-icon briefcase'></i> Data Operator</a></li>");                            
+                            out.print("<li><a href='#'><i class='halflings-icon th-list'></i> Data Parameter</a></li>");                             
+                            out.print("</ul>");
                             out.print("</li>");
                             }else {
 

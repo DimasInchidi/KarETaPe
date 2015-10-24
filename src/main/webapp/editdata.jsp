@@ -42,7 +42,7 @@ for(Cookie cookie : cookies){
     </ul>
 
     <div class="row-fluid custom2">
-        <strong><h2>Ubah Data Penduduk</h2></strong>
+        <strong><h2>Ubah Data Kependudukan</h2></strong>
         <hr hr style="border-top:2px solid #578EBE">
         <div class="row-fluid sortable">
             <div class="box-content">
