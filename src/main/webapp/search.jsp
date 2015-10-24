@@ -31,13 +31,14 @@
         <div class="container-fluid-full">
             <div class="row-fluid">
                 <div id="content" class="span10">
-                    <div class="row-fluid custom4">                                
-                        <div style="padding-top: 83px; padding-left: 25px; width: 60%; float:left ">
+                    <div class="row-fluid custom4">
+                        <img src="assets/img/ganteng.png" style="float:left">
+                        <div style="padding-top: 83px; padding-left: 40px; width: 60%;position: absolute ">                            
                             <table cellpadding="6" border="0" style="min-width: 50%; padding: 5px; text-align: left ">                            
                                 <tbody>
                                     <tr>
                                         <td><strong> NIK</strong></td>
-                                        <td>Berapa</td>
+                                        <td width="350px">Berapa</td>                                        
                                     </tr>
                                     <tr>
                                         <td><strong> Nama</strong></td>
@@ -58,12 +59,13 @@
                                 </tbody>
                             </table>                        
                         </div>
-                        <div style="padding-top: 90px; padding-right: 25px; width: 30%; float:left">
-                            foto
-                        </div>               
+                        <div style="padding-top: 90px; padding-left: 400px; width: 30%;position: absolute "> 
+                            <img src="assets/img/kafi.png" style="width: 100px;">
+                        </div>
                     </div>
                     <div class="row-fluid custom4a">
-                        <div style="padding-left: 38px; padding-top: 116px; width: 150px;height:150px">
+                        <img src="assets/img/ganteng2.png" style="float:left">
+                        <div style="padding-left: 38px; padding-top: 116px; width: 150px;height:150px; position: absolute">
                             qrcode
                         </div>
                     </div>
