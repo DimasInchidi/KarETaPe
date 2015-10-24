@@ -15,8 +15,13 @@
     </servlet>
     <servlet>
         <description>adding data (tambah data)</description>
-        <servlet-name>New Data</servlet-name>
+        <servlet-name>Input Page</servlet-name>
         <jsp-file>/dataadd.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <description>Search in Login Mode</description>
+        <servlet-name>Search Page</servlet-name>
+        <jsp-file>/searchin.jsp</jsp-file>
     </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
@@ -31,8 +36,12 @@
         <url-pattern>/dashboard</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>New Data</servlet-name>
+        <servlet-name>Input Page</servlet-name>
         <url-pattern>/inputdata</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Search Page</servlet-name>
+        <url-pattern>/search</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
