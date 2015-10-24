@@ -27,16 +27,16 @@ public class Privilages extends DB_Transaction {
     String Level = "";
 
     public boolean doLogin(String Username, String Pass) {
-        String con = "WHERE nip = '" + Username + "' AND password = md5('" + Pass + "')";
+        String condition = "WHERE nik = '" + Username + "' AND password = md5('" + Pass + "')";
         try{
-            ResultSet rs = super.Select("username, level","lmt_user",con);
-            while(rs.next()){
-                User = rs.getString(0);
-                Level = rs.getString(1);
-            }
+            ResultSet rs = super.Select("nik, level","lmt_user",condition);
+            rs.next();
+                User = rs.getString(1);
+                System.out.println(User);
+                Level = rs.getString(2);
+            return true;
         }catch(Exception ex){
             return false;
         }
-        return true;
     }
 }

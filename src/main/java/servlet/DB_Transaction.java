@@ -21,6 +21,7 @@ import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Properties;
 
 /**
  *
@@ -39,8 +40,13 @@ public class DB_Transaction {
 
     public Connection F_Koneksi() {
         try {
+            Properties props = new Properties();
+            props.setProperty("user", USER);
+            props.setProperty("password",PASS);
+            props.setProperty("sslfactory", "org.postgresql.ssl.NonValidatingFactory");
+            props.setProperty("ssl", "true");
             Class.forName(JDBC_DRIVER);
-            con = DriverManager.getConnection(DB_URL, USER, PASS);
+            con = DriverManager.getConnection(DB_URL, props);
         } catch (SQLException se) {
             System.out.println("Tidak dapat terhubung ke database\n" + se.getMessage());
         } catch (ClassNotFoundException e) {
@@ -50,19 +56,23 @@ public class DB_Transaction {
     }
 
     public ResultSet Select(String data, String table, String condition) {
+        String sql = "SELECT " + data + " FROM " + table + " " + condition;
+        System.out.println(sql);
         try {
-            String sql = "SELECT " + data + " FROM " + table + " " + condition;
-            con = DriverManager.getConnection(DB_URL, USER, PASS);
+            con = F_Koneksi();
             stmt = con.createStatement();
             rs = stmt.executeQuery(sql);
         } catch (Exception ex) {
             rs = null;
+            ex.printStackTrace();
+            System.out.println(ex.getMessage());
         }
         return rs;
     }
 
     public boolean Update(String data, String table, String condition) {
         try {
+            con = F_Koneksi();
             String sql = "UPDATE " + table + " SET " + data + " WHERE " + condition;
             con = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = con.createStatement();
@@ -73,21 +83,21 @@ public class DB_Transaction {
             return false;
         }
     }
-    
-    public boolean Insert(String data, String table){
-        try{
+
+    public boolean Insert(String data, String table) {
+        try {
             String sql = "INSERT INTO " + table + " VALUE " + data;
             con = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = con.createStatement();
-            stmt.executeUpdate(sql);
+            stmt.executeQuery(sql);
             con.close();
             return true;
-        }catch(Exception ex){
+        } catch (Exception ex) {
             return false;
         }
     }
-    
-    public boolean Delete(String table, String condition){
+
+    public boolean Delete(String table, String condition) {
         try {
             String sql = "DELETE FROM " + table + " WHERE " + condition;
             con = DriverManager.getConnection(DB_URL, USER, PASS);

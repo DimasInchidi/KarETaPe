@@ -46,15 +46,17 @@ public class Login extends HttpServlet {
         //for debug only
         boolean UserExist = Priv.doLogin(request.getParameter("username"), request.getParameter("password"));
         if (UserExist) {
-            user = request.getParameter("username");
+            System.out.println("user exist");
+            user = Priv.User;
             level = Priv.Level;
         } else {
+            System.out.println("userNOTexist");
             user = null;
             level = null;
         }
 
-        if (!"".equals(user)) {
-            System.err.println("ok login: " + request.getParameter("username"));
+        if (!"".equals(user) && user != null) {
+            System.err.println("ok login: " + user);
             HttpSession session = request.getSession(true);
                 session.setAttribute("user", user);
                 session.setAttribute("level", level);
