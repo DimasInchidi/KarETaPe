@@ -43,28 +43,51 @@ for(Cookie cookie : cookies){
 
     <div class="row-fluid custom2">
 
-        <strong><h2>Ubah Data Penduduk</h2></strong>
-        <hr>
+        <strong><h2>Pencarian Data Penduduk</h2></strong>
+        <hr style="border-top:2px solid #578EBE">
         <div class="row-fluid sortable">
 
-            <div class="box-content">
+            <div class="box-content" style="padding-bottom: 30px">
                 <form class="form-horizontal">
                     <fieldset>
                         <div class="control-group">
                             <label class="control-label" for="nik">NIK </label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge typeahead" id="nik"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>                                   
+                                <input type="text" class="input-xlarge typeahead" id="nik">                                   
                                 <button class="btn" type="submit">Search</button><button class="btn" type="reset">Cancel</button>
                             </div>
                         </div>                        
                     </fieldset>
-                </form>   
-
-            </div>
-        </div><!--/span-->
-
+                </form>
+                <hr style="border-top:2px solid #578EBE">
+            </div>            
+        </div><!--/span-->        
+    </div>
+    <div class="row-fluid custom2">
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="control-group">
+                    <label class="control-label">NIK :</label>                    
+                    <div class="controls">
+                        <p class="help-block">taro sini namanya</p>
+                    </div>  
+                </div>
+                <div class="control-group">
+                    <label class="control-label">Nama :</label>                    
+                    <div class="controls">
+                        <p class="help-block">taro sini namanya</p>
+                    </div>  
+                </div>
+                <div class="form-actions">
+                <a href="" type="button" class="btn btn-primary">Ubah</a>
+                <a href="" type="button" class="btn btn-inverse">Cetak</a>
+                </div>
+            </fieldset>
+        </form>
     </div>
 
+</div>
+</div
 </div>
 </div>
 

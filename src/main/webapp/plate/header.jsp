@@ -78,7 +78,7 @@
         </div>
 
         <div class="container-fluid-full">
-            <div class="row-fluid" style="width: 90%;margin-left: auto; margin-right: auto; margin-bottom: 30px">
+            <div class="row-fluid" style="min-height: 100%;width: 90%;margin-left: auto; margin-right: auto; margin-bottom: 30px">
 
                 <noscript>
                 <div class="alert alert-block span10">
