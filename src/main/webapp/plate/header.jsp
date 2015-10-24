@@ -47,7 +47,7 @@
                             </li>
                             </li>
                             <li>
-                                <a class="btn" href="#">
+                                <a class="btn" href="inputdata">
                                     <i class="halflings-icon white list-alt"></i> Input Data
                                 </a>                                
                             </li>

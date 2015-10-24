@@ -17,7 +17,7 @@
 
 
 function popitupsmall(url) {
-    newwindow = window.open(url, 'Data Pencarian', "width=700,height=700,screenX=300,screenY=75,scrollbars=yes ");
+    newwindow = window.open(url, 'Data Pencarian', "width=760,height=700,screenX=300,screenY=75,scrollbars=yes ");
     if (window.focus) {
         newwindow.focus()
     }

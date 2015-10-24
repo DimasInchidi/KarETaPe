@@ -271,15 +271,7 @@
     {
         margin-left: 0;
     }
-    .row-fluid .custom4
-    {
-        background-color: #000;
-        background: url("../img/ganteng.png") no-repeat;        
-        width: 90%;
-        height: 330px;
-        margin-left: auto;          
-        margin-right: auto              
-    }
+    
     .row-fluid .custom1{
         margin-left:auto;  
         text-align: center; 
@@ -300,9 +292,20 @@
     {
         background-color: #fff;
         background: url("../img/ganteng.png") no-repeat;        
-        width: 90%;
+        width: 630px;
         height: 330px;
-        margin-left: auto;          
+        margin-left: auto; 
+        margin-top:30px;
+        margin-right: auto              
+    }
+    .row-fluid .custom4a
+    {
+        background-color: #000;
+        background: url("../img/ganteng2.png") no-repeat;        
+        width: 630px;
+        height: 330px;
+        margin-left: auto;
+        margin-top:30px;
         margin-right: auto              
     }
     .row-fluid .custom2{
@@ -728,14 +731,57 @@
     {
         margin-left: 0;
     }
+    .row-fluid .custom1{
+        margin-left:auto;  
+        text-align: center; 
+        margin-right: auto; 
+        background-color: #fcfcfc; 
+        width: 600px; 
+        padding: 10px 
+    }    
+    .row-fluid .custom1a{
+        margin-left:auto;  
+        text-align: left; 
+        margin-right: auto; 
+        background-color: #fcfcfc; 
+        width: 600px; 
+        padding: 10px 
+    }
     .row-fluid .custom4
     {
         background-color: #fff;
         background: url("../img/ganteng.png") no-repeat;        
-        width: 90%;
+        width: 630px;
         height: 330px;
-        margin-left: auto;          
+        margin-left: auto; 
+        margin-top:30px;
         margin-right: auto              
+    }
+    .row-fluid .custom4a
+    {
+        background-color: #000;
+        background: url("../img/ganteng2.png") no-repeat;        
+        width: 630px;
+        height: 330px;
+        margin-left: auto;
+        margin-top:30px;
+        margin-right: auto              
+    }
+    .row-fluid .custom2{
+        margin-left:auto; 
+        margin-right: auto; 
+        width: 90%;
+    }
+    .row-fluid .custom3{
+        text-align:center; 
+        width:80%; margin-left:auto;
+        margin-right:auto
+    }
+    .row-fluid .custom3a{
+        text-align:left; 
+        width:80%; 
+        margin-left:auto;
+        margin-right:auto
     }
     .row-fluid .controls-row [class*="span"]+[class*="span"]
     {
@@ -1013,15 +1059,57 @@
     {
         width: 100%;
     }
+    .row-fluid .custom1{
+        margin-left:auto;  
+        text-align: center; 
+        margin-right: auto; 
+        background-color: #fcfcfc; 
+        width: 600px; 
+        padding: 10px 
+    }    
+    .row-fluid .custom1a{
+        margin-left:auto;  
+        text-align: left; 
+        margin-right: auto; 
+        background-color: #fcfcfc; 
+        width: 600px; 
+        padding: 10px 
+    }
     .row-fluid .custom4
     {
         background-color: #fff;
         background: url("../img/ganteng.png") no-repeat;        
-        width: 90%;
+        width: 630px;
         height: 330px;
-        margin-bottom: 30px;
-        margin-left: auto;          
+        margin-left: auto; 
+        margin-top:30px;
         margin-right: auto              
+    }
+    .row-fluid .custom4a
+    {
+        background-color: #000;
+        background: url("../img/ganteng2.png") no-repeat;        
+        width: 630px;
+        height: 330px;
+        margin-left: auto;
+        margin-top:30px;
+        margin-right: auto              
+    }
+    .row-fluid .custom2{
+        margin-left:auto; 
+        margin-right: auto; 
+        width: 90%;
+    }
+    .row-fluid .custom3{
+        text-align:center; 
+        width:80%; margin-left:auto;
+        margin-right:auto
+    }
+    .row-fluid .custom3a{
+        text-align:left; 
+        width:80%; 
+        margin-left:auto;
+        margin-right:auto
     }
     .row,.thumbnails
     {
