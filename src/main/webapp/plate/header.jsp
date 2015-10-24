@@ -53,7 +53,7 @@
                             </li>
                             <li>
                                 <a class="btn" href="#">
-                                    <i class="halflings-icon white list-alt"></i> Pencarian
+                                    <i class="halflings-icon white search"></i> Pencarian
                                 </a>                                
                             </li>
                             <li class="dropdown">
