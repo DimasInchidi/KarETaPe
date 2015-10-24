@@ -46,14 +46,15 @@
                                 </a>
                             </li>
                             </li>
-                            <li class="dropdown">
+                            <li>
                                 <a class="btn" href="#">
-                                    <i class="halflings-icon white list-alt"></i> Data Penduduk
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="inputdata"><i class="halflings-icon edit"></i> Tambah Data</a></li>
-                                    <li><a href=""><i class="halflings-icon check"></i> Ubah Data</a></li>
-                                </ul>
+                                    <i class="halflings-icon white list-alt"></i> Input Data
+                                </a>                                
+                            </li>
+                            <li>
+                                <a class="btn" href="#">
+                                    <i class="halflings-icon white list-alt"></i> Pencarian
+                                </a>                                
                             </li>
                             <li class="dropdown">
                                 <a class="btn dropdown-toggle">

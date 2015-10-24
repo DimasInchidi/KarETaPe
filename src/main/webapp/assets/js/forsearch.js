@@ -17,14 +17,14 @@
 
 
 function popitupsmall(url) {
-    newwindow = window.open(url, 'Data Pencarian', "width=700,height=300,screenX=300,screenY=150");
+    newwindow = window.open(url, 'Data Pencarian', "width=700,height=700,screenX=300,screenY=75,scrollbars=yes ");
     if (window.focus) {
         newwindow.focus()
     }
     return false;
 }
 function popitupfull(url) {
-    newwindow = window.open(url, 'Data Pencarian', "type=fullWindow,fullscreen");
+    newwindow = window.open(url, 'Data Pencarian', "type=fullWindow,fullscreen,scrollbars:yes ");
     if (window.focus) {
         newwindow.focus()
     }

@@ -34,7 +34,6 @@ for(Cookie cookie : cookies){
 }
 
 %>
-
 <jsp:include page="plate/header.jsp" flush="true"/>
 <!-- start: Content -->
 <div id="content" class="span10">
@@ -43,166 +42,49 @@ for(Cookie cookie : cookies){
     </ul>
 
     <div class="row-fluid custom2">
-        <div class="row-fluid custom3a">            
-            <strong>Masukan NIK dari data yang akan diubah:</strong>
-            <br>           
-            <form action="" method="post">  
-                <div style="float: left; width: 45% ;padding-top: 10px">
-                    <input type="text" name="nik" id="nik" placeholder="Isi dengan NIK" style="height: 25px"/>
-                </div>
-                <div style="float: left; width: 30%;padding-top: 10px">
-                    <a class="btn btn-primary" type="submit" style="width: 70px" href="" onclick="">
-                        <i class="halflings-icon white search"></i>Cari</a>
-                </div> 
-            </form>            
-        </div>
+
+        <strong><h2>Ubah Data Penduduk</h2></strong>
         <hr>
-        <div class="row-fluid custom3a">
-            <div class="row-fluid sortable">
-                <div class="box span12">
-                    <div class="box-header" data-original-title>
-                        <strong><h2>Ubah Data Penduduk</h2></strong>
-                    </div>
-                    <div class="box-content">
-                        <form action="" method="post">
-                            <table border="0" cellspacing="15" cellpadding="15" >
-                                <tbody>
-                                    <tr>
-                                        <td><strong>NIK</strong></td>
-                                        <td><span class="input-xlarge uneditable-input">Some value here</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Nama</strong></td>
-                                        <td><input type="text" name="nama" placeholder="masukan nama lengkap" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Tempat Lahir</strong></td>
-                                        <td><select name="tempatlhr" id="selectError" data-rel="chosen" >
+        <div class="row-fluid sortable">
 
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Tanggal Lahir</strong></td>
-                                        <td><input name="tgllahir" type="text" class="input-xlarge datepicker" id="tgllahir" placeholder="masukan tanggal lahir"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Jenis Kelamin</strong></td>
-                                        <td>
-                                            <label class="radio">
-                                                <input type="radio" name="jk" id="optionsRadios1" value="laki" checked="">
-                                                Laki-laki
-                                            </label>
-                                            <div style="clear:both"></div>
-                                            <label class="radio">
-                                                <input type="radio" name="jk" id="optionsRadios1" value="cewe">
-                                                Perempuan
-                                            </label></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Alamat</strong></td>
-                                        <td><textarea name="alamat" id="alamat" rows="3" placeholder="masukan alamat"></textarea></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>RT</strong></td>
-                                        <td><input type="text" name="rt" placeholder="masukan RT" /></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Kelurahan/Desa</strong></td>
-                                        <td><select id="kelurahandesa" name="lurahdesa" data-rel="chosen" >
-
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Kecamatan</strong></td>
-                                        <td><select id="kecamatan" name="kecamatan" data-rel="chosen" >
-
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Kota</strong></td>
-                                        <td><select id="kota" name="kota" data-rel="chosen" >
-
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Provinsi</strong></td>
-                                        <td><select name="prov" id="provinsi" data-rel="chosen" >
-
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Agama</strong></td>
-                                        <td><select name="agama" id="agama" data-rel="chosen" >
-                                                <option>Islam</option>
-                                                <option>Katolik</option>
-                                                <option>Protestan</option>
-                                                <option>Hindu</option>
-                                                <option>Buddha</option>
-                                                <option>Lainnya..</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Status Perkawinan</strong></td>
-                                        <td><select name="status" id="status" data-rel="chosen" >
-                                                <option>Kawin</option>
-                                                <option>Belum Kawin</option>
-                                                <option>bla bla</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Pekerjaan</strong></td>
-                                        <td><select name="kerja" id="kerja" data-rel="chosen" >
-                                                <option>PNS</option>
-                                                <option>SWASTA</option>
-                                                <option>PELAJAR</option>
-                                                <option>PENGANGGURAN</option>
-                                                <option>WIRASWASTA</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Kewarganegaraan</strong></td>
-                                        <td><select name="wrgnegara"  id="wrgnegara" data-rel="chosen" >
-                                                <option>WNI</option>
-                                                <option>WNA</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Foto</strong></td>
-                                        <td><input name="foto" class="input-file uniform_on" id="fileInput" type="file"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Tanda Tangan</strong></td>
-                                        <td><input name="ttd" class="input-file uniform_on" id="fileInput1" type="file"></td>
-                                    </tr>
-                                    <tr>
-                                        <td><strong>Sidik Jari</strong></td>
-                                        <td><input name="sjari" class="input-file uniform_on" id="fileInput2" type="file"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <div class="form-actions">
-                                <button type="submit" class="btn btn-primary">Save changes</button>
-
+            <div class="box-content">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="control-group">
+                            <label class="control-label" for="nik">NIK </label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge typeahead" id="nik"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>                                   
                             </div>
-                        </form>
-                    </div>
-                </div>
+                        </div>
+
+                        <div class="control-group">
+                            <label class="control-label" for="nama">Nama</label>
+                            <div class="controls">
+                                <input class="input-xlarge focused" id="nama" type="text">
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="control-label" for="date01">Tanggal Lahir</label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge datepicker" id="date01" value="02/16/12">
+                            </div>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="reset" class="btn">Cancel</button>
+                        </div>
+                    </fieldset>
+                </form>   
+
             </div>
-        </div>
+        </div><!--/span-->
+
     </div>
-</div>
 
 </div>
 </div>
+
 
 <jsp:include page="plate/footer.html" flush="true"/>
 
