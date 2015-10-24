@@ -32,7 +32,7 @@
             <div class="row-fluid">
                 <div id="content" class="span10">
                     <div class="row-fluid custom4">                                
-                        <div class="row-fluid">
+                        <div class="row-fluid" style="padding-top: 83px; padding-left: 25px; width: 60%; float:left ">
                             <table cellpadding="6" border="0" style="min-width: 50%; padding: 5px; text-align: left ">                            
                                 <tbody>
                                     <tr>
@@ -58,7 +58,7 @@
                                 </tbody>
                             </table>                        
                         </div>
-                        <div class="row-fluid">
+                        <div class="row-fluid" style="padding-top: 90px; padding-right: 25px; width: 30%; float:left">
                             foto
                         </div>               
                     </div>
