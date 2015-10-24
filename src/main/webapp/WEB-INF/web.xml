@@ -28,6 +28,21 @@
         <servlet-name>InsPenduduk</servlet-name>
         <servlet-class>servlet.InsPend</servlet-class>
     </servlet>
+    <servlet>
+        <description>Page untuk memanajemen user</description>
+        <servlet-name>Manajemen User</servlet-name>
+        <jsp-file>/manuser.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <description>Page untuk manajemen operator</description>
+        <servlet-name>Manajemen Operator</servlet-name>
+        <jsp-file>/manoper.jsp</jsp-file>
+    </servlet>
+    <servlet>
+        <description>Page untuk manajemen parameter</description>
+        <servlet-name>Manajemen Parameter</servlet-name>
+        <jsp-file>/parameter.jsp</jsp-file>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -51,6 +66,18 @@
     <servlet-mapping>
         <servlet-name>InsPenduduk</servlet-name>
         <url-pattern>/inpend</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Manajemen User</servlet-name>
+        <url-pattern>/manage-user</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Manajemen Operator</servlet-name>
+        <url-pattern>/manage-op</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Manajemen Parameter</servlet-name>
+        <url-pattern>/parameter</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
