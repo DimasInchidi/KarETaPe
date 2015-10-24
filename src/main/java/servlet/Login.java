@@ -63,7 +63,7 @@ public class Login extends HttpServlet {
             System.out.println("-_-");
             response.sendRedirect("dashboard");
         } else {
-           response.sendError(401, "Silahkan coba lagi");
+            response.sendRedirect("dashboard");
          }
     }
 

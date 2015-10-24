@@ -52,90 +52,83 @@ for(Cookie cookie : cookies){
                             <tbody>
                                 <tr>
                                     <td><strong>NIK</strong></td>
-                                    <td><input type="text" name="nik" placeholder="masukan NIK" /></td>
+                                    <td><input type="text" name="nik" placeholder="NIK" /></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Nama</strong></td>
-                                    <td><input type="text" name="nama" placeholder="masukan nama lengkap" /></td>
+                                    <td><input type="text" name="nama" placeholder="Nama Lengkap" /></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Tempat Lahir</strong></td>
-                                    <td><select name="tempatlhr" id="selectError" data-rel="chosen" >
-
-                                        </select>
+                                    <td><input type="text" name="lahir" placeholder="Tempat Lahir" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Tanggal Lahir</strong></td>
-                                    <td><input name="tgllahir" type="text" class="input-xlarge datepicker" id="tgllahir" placeholder="masukan tanggal lahir"></td>
+                                    <td><input name="tgllahir" type="text" class="input-xlarge datepicker" id="tgllahir" placeholder="Tanggal Lahir"></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Jenis Kelamin</strong></td>
                                     <td>
                                         <label class="radio">
-                                            <input type="radio" name="jk" id="optionsRadios1" value="laki" checked="">
+                                            <input type="radio" name="jk" id="optionsRadios1" value="1" checked="">
                                             Laki-laki
                                         </label>
                                         <div style="clear:both"></div>
                                         <label class="radio">
-                                            <input type="radio" name="jk" id="optionsRadios1" value="cewe">
+                                            <input type="radio" name="jk" id="optionsRadios1" value="0">
                                             Perempuan
                                         </label></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Alamat</strong></td>
-                                    <td><textarea name="alamat" id="alamat" rows="3" placeholder="masukan alamat"></textarea></td>
+                                    <td><textarea name="alamat" id="alamat" rows="3" placeholder="Alamat"></textarea></td>
                                 </tr>
                                 <tr>
                                     <td><strong>RT</strong></td>
-                                    <td><input type="text" name="rt" placeholder="masukan RT" /></td>
+                                    <td><input type="text" name="rt" placeholder="No RT" /></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>RW</strong></td>
+                                    <td><input type="text" name="rt" placeholder="No RW" /></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Kelurahan/Desa</strong></td>
-                                    <td><select id="kelurahandesa" name="lurahdesa" data-rel="chosen" >
-
-                                        </select>
+                                    <td><input type="text" name="lahir" placeholder="Nama Kelurahan" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Kecamatan</strong></td>
-                                    <td><select id="kecamatan" name="kecamatan" data-rel="chosen" >
-
-                                        </select>
+                                    <td><input type="text" name="lahir" placeholder="Nama Kecamatan" />
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Kota</strong></td>
-                                    <td><select id="kota" name="kota" data-rel="chosen" >
-
-                                        </select>
+                                    <td><strong>Kota/Kabupaten</strong></td>
+                                    <td><input type="text" name="lahir" placeholder="Nama Kota/Kabupaten" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Provinsi</strong></td>
-                                    <td><select name="prov" id="provinsi" data-rel="chosen" >
-
-                                        </select>
+                                    <td><input type="text" name="lahir" placeholder="Nama Provinsi" />
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Agama</strong></td>
                                     <td><select name="agama" id="agama" data-rel="chosen" >
-                                            <option>Islam</option>
-                                            <option>Katolik</option>
-                                            <option>Protestan</option>
-                                            <option>Hindu</option>
-                                            <option>Buddha</option>
-                                            <option>Lainnya..</option>
+                                            <option value="1">Islam</option>
+                                            <option value="2">Katholik</option>
+                                            <option value="3">Protestan</option>
+                                            <option value="4">Hindu</option>
+                                            <option value="5">Budha</option>
                                         </select>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Status Perkawinan</strong></td>
                                     <td><select name="status" id="status" data-rel="chosen" >
-                                            <option>Kawin</option>
-                                            <option>Belum Kawin</option>
-                                            <option>bla bla</option>
+                                            <option value="1">Belum Kawin</option>
+                                            <option value="2">Kawin</option>
+                                            <option value="3">Lainnya</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -143,10 +136,10 @@ for(Cookie cookie : cookies){
                                     <td><strong>Pekerjaan</strong></td>
                                     <td><select name="kerja" id="kerja" data-rel="chosen" >
                                             <option>PNS</option>
-                                            <option>SWASTA</option>
-                                            <option>PELAJAR</option>
-                                            <option>PENGANGGURAN</option>
-                                            <option>WIRASWASTA</option>
+                                            <option>Swasta</option>
+                                            <option>Pelajar</option>
+                                            <option>Wiraswasta</option>
+                                            <option>Tidak Bekerja</option>
                                         </select>
                                     </td>
                                 </tr>
@@ -169,6 +162,19 @@ for(Cookie cookie : cookies){
                                 <tr>
                                     <td><strong>Sidik Jari</strong></td>
                                     <td><input name="sjari" class="input-file uniform_on" id="fileInput2" type="file"></td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Status</strong></td>
+                                    <td>
+                                        <label class="radio">
+                                            <input type="radio" name="hidup" id="optionsRadios2" value="1" checked="">
+                                            Masih Hidup
+                                        </label>
+                                        <div style="clear:both"></div>
+                                        <label class="radio">
+                                            <input type="radio" name="hidup" id="optionsRadios2" value="0">
+                                            Sudah Meninggal
+                                        </label></td>
                                 </tr>
                             </tbody>
                         </table>

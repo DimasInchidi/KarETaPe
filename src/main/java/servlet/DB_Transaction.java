@@ -57,7 +57,6 @@ public class DB_Transaction {
 
     public ResultSet Select(String data, String table, String condition) {
         String sql = "SELECT " + data + " FROM " + table + " " + condition;
-        System.out.println(sql);
         try {
             con = F_Koneksi();
             stmt = con.createStatement();
@@ -74,7 +73,6 @@ public class DB_Transaction {
         try {
             con = F_Koneksi();
             String sql = "UPDATE " + table + " SET " + data + " WHERE " + condition;
-            con = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = con.createStatement();
             stmt.executeUpdate(sql);
             con.close();
@@ -86,8 +84,8 @@ public class DB_Transaction {
 
     public boolean Insert(String data, String table) {
         try {
+            con = F_Koneksi();
             String sql = "INSERT INTO " + table + " VALUE " + data;
-            con = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = con.createStatement();
             stmt.executeQuery(sql);
             con.close();
@@ -99,8 +97,8 @@ public class DB_Transaction {
 
     public boolean Delete(String table, String condition) {
         try {
+            con = F_Koneksi();
             String sql = "DELETE FROM " + table + " WHERE " + condition;
-            con = DriverManager.getConnection(DB_URL, USER, PASS);
             stmt = con.createStatement();
             stmt.executeUpdate(sql);
             con.close();
