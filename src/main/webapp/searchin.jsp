@@ -34,16 +34,40 @@ for(Cookie cookie : cookies){
 }
 
 %>
-
 <jsp:include page="plate/header.jsp" flush="true"/>
 <!-- start: Content -->
 <div id="content" class="span10">
-    <
-    
-</div>
+    <ul class="breadcrumb">
+        <marquee direction="left" scrollamount="5" height="30px" width="100%" >Selamat datang di website KarETaPe. </marquee>
+    </ul>
+
+    <div class="row-fluid custom2">
+
+        <strong><h2>Ubah Data Penduduk</h2></strong>
+        <hr>
+        <div class="row-fluid sortable">
+
+            <div class="box-content">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <div class="control-group">
+                            <label class="control-label" for="nik">NIK </label>
+                            <div class="controls">
+                                <input type="text" class="input-xlarge typeahead" id="nik"  data-provide="typeahead" data-items="4" data-source='["Alabama","Alaska","Arizona","Arkansas","California","Colorado","Connecticut","Delaware","Florida","Georgia","Hawaii","Idaho","Illinois","Indiana","Iowa","Kansas","Kentucky","Louisiana","Maine","Maryland","Massachusetts","Michigan","Minnesota","Mississippi","Missouri","Montana","Nebraska","Nevada","New Hampshire","New Jersey","New Mexico","New York","North Dakota","North Carolina","Ohio","Oklahoma","Oregon","Pennsylvania","Rhode Island","South Carolina","South Dakota","Tennessee","Texas","Utah","Vermont","Virginia","Washington","West Virginia","Wisconsin","Wyoming"]'>                                   
+                                <button class="btn" type="submit">Search</button><button class="btn" type="reset">Cancel</button>
+                            </div>
+                        </div>                        
+                    </fieldset>
+                </form>   
+
+            </div>
+        </div><!--/span-->
+
+    </div>
 
 </div>
 </div>
+
 
 <jsp:include page="plate/footer.html" flush="true"/>
 
