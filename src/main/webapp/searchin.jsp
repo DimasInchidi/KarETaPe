@@ -48,7 +48,7 @@ for(Cookie cookie : cookies){
         <div class="row-fluid sortable">
 
             <div class="box-content" style="padding-bottom: 30px">
-                <form class="form-horizontal">
+                <form class="form-horizontal" style="position: relative">
                     <fieldset>
                         <div class="control-group">
                             <label class="control-label" for="nik">NIK </label>
