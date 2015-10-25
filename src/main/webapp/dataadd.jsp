@@ -65,12 +65,12 @@ DB_Transaction db = new DB_Transaction();
                                 </tr>
                                 <tr>
                                     <td><strong>Tempat Lahir</strong></td>
-                                    <td><input type="text" name="lahir" placeholder="Tempat Lahir" />
+                                    <td><input name="lahir" type="text" class="input-xlarge datepicker" id="datepicker1" placeholder="Tanggal Lahir"></td>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td><strong>Tanggal Lahir</strong></td>
-                                    <td><input name="tgllahir" type="text" class="input-xlarge datepicker" id="tgllahir" placeholder="Tanggal Lahir"></td>
+                                    <td><input name="tgllahir" type="text" class="input-xlarge datepicker" id="datepicker1" placeholder="Tanggal Lahir"></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Jenis Kelamin</strong></td>
