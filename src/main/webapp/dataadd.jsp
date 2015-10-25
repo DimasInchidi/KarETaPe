@@ -65,7 +65,7 @@ DB_Transaction db = new DB_Transaction();
                                 </tr>
                                 <tr>
                                     <td><strong>Tempat Lahir</strong></td>
-                                    <td><input type="text" name="lahir" placeholder="Tempat Lahir" />
+                                    <td><input name="lahir" type="text" placeholder="Tanggal Lahir"></td>
                                     </td>
                                 </tr>
                                 <tr>

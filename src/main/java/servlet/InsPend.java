@@ -18,6 +18,7 @@ package servlet;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -38,7 +39,7 @@ import javax.servlet.http.Part;
 public class InsPend extends HttpServlet{
     DB_Transaction db = new DB_Transaction();
     
-    protected void insPend(HttpServletRequest request, HttpServletResponse response) 
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response) 
             throws ServletException, IOException{
         String nik,nama,tampatl,tl,jk,hidup,alamat, rt,rw,kel,kec;
         String prov,kota,agama,status,pekerjaan,warga,foto,sidik,ttd,gol;
@@ -46,7 +47,9 @@ public class InsPend extends HttpServlet{
         nik = request.getParameter("nik");
         nama = request.getParameter("nama");
         tampatl = request.getParameter("lahir");
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd");
         tl = request.getParameter("tgllahir");
+        tl = date.format(tl);
         jk = request.getParameter("jk");
         hidup = request.getParameter("hidup");
         alamat = request.getParameter("alamat");
@@ -70,5 +73,43 @@ public class InsPend extends HttpServlet{
                 + "provinsi,kota,agama,status,pekerjaan,warga,goldarah)", value);
         response.sendRedirect("dashboard");
     }
-    
+    // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">
+    /**
+     * Handles the HTTP <code>GET</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    /**
+     * Handles the HTTP <code>POST</code> method.
+     *
+     * @param request servlet request
+     * @param response servlet response
+     * @throws ServletException if a servlet-specific error occurs
+     * @throws IOException if an I/O error occurs
+     */
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processRequest(request, response);
+    }
+
+    /**
+     * Returns a short description of the servlet.
+     *
+     * @return a String containing servlet description
+     */
+    @Override
+    public String getServletInfo() {
+        return "Short description";
+    }// </editor-fold>
+
 }
