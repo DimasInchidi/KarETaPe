@@ -90,7 +90,7 @@
                             %>
                             <li class="dropdown">
                                 <a class="btn dropdown-toggle">
-                                    <i class="halflings-icon white user"></i> Selamat Datang, <%=session.getAttribute("user")%>
+                                    <i class="halflings-icon white user"></i> Selamat Datang, 
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="dropdown-menu-title">
