@@ -65,7 +65,7 @@ DB_Transaction db = new DB_Transaction();
                                 </tr>
                                 <tr>
                                     <td><strong>Tempat Lahir</strong></td>
-                                    <td><input name="lahir" type="text" class="input-xlarge datepicker" id="datepicker1" placeholder="Tanggal Lahir"></td>
+                                    <td><input name="lahir" type="text" placeholder="Tanggal Lahir"></td>
                                     </td>
                                 </tr>
                                 <tr>

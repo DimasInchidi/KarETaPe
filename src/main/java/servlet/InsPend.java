@@ -48,7 +48,7 @@ public class InsPend extends HttpServlet{
         nama = request.getParameter("nama");
         tampatl = request.getParameter("lahir");
         SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd");
-        tl = request.getParameter("lahir");
+        tl = request.getParameter("tgllahir");
         tl = date.format(tl);
         jk = request.getParameter("jk");
         hidup = request.getParameter("hidup");
