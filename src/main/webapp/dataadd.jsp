@@ -70,7 +70,7 @@ DB_Transaction db = new DB_Transaction();
                                 </tr>
                                 <tr>
                                     <td><strong>Tanggal Lahir</strong></td>
-                                    <td><input name="tgllahir" type="text" class="input-xlarge datepicker" id="tgllahir" placeholder="Tanggal Lahir"></td>
+                                    <td><input name="tgllahir" type="text" class="input-xlarge datepicker hasDatepicker" id="tgllahir" placeholder="Tanggal Lahir"></td>
                                 </tr>
                                 <tr>
                                     <td><strong>Jenis Kelamin</strong></td>
