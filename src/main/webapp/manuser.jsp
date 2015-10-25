@@ -86,7 +86,7 @@ for(Cookie cookie : cookies){
     </div>
     <div class="modal-body">
         <div class="row-fluid">
-            <form action="" method="post" style="position: relative">
+            <form action="adduser" method="post" style="position: relative">
                 <fieldset>
                     <table border="0" cellspacing="15" cellpadding="15" >
                         <tbody>

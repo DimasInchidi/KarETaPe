@@ -48,6 +48,11 @@
         <servlet-name>Get Cari Penduduk</servlet-name>
         <servlet-class>servlet.SearchNIK</servlet-class>
     </servlet>
+    <servlet>
+        <description>untuk nambahin user</description>
+        <servlet-name>New User</servlet-name>
+        <servlet-class>servlet.InsUser</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -87,6 +92,10 @@
     <servlet-mapping>
         <servlet-name>Get Cari Penduduk</servlet-name>
         <url-pattern>/caripen</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>New User</servlet-name>
+        <url-pattern>/adduser</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

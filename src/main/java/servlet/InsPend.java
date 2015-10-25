@@ -18,6 +18,7 @@ package servlet;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.text.SimpleDateFormat;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -46,7 +47,9 @@ public class InsPend extends HttpServlet{
         nik = request.getParameter("nik");
         nama = request.getParameter("nama");
         tampatl = request.getParameter("lahir");
-        tl = request.getParameter("tgllahir");
+        SimpleDateFormat date = new SimpleDateFormat("yyyy-MM-dd");
+        tl = request.getParameter("lahir");
+        tl = date.format(tl);
         jk = request.getParameter("jk");
         hidup = request.getParameter("hidup");
         alamat = request.getParameter("alamat");
