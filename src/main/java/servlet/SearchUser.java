@@ -16,41 +16,48 @@
  */
 package servlet;
 
+import java.io.IOException;
 import java.sql.ResultSet;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 /**
  *
  * @author dNaga
  */
-public class SearchUser extends DB_Transaction{
+public class SearchUser extends HttpServlet{
+    Search s = new Search();
+    Search s1 = new Search();
+    
     String NIK = ""; String namaU = ""; String jabatan = ""; String kel = ""; String kec = ""; String kot = ""; String prov = "";
     String lv = "";
     
-    public void SerachUser(String nip){
-        String con= " WHERE nip = '"+nip+"'";
-        try{
-            ResultSet rs = super.Select("lmt_detail_user.NIK,"
-                    + "lmt.detail_user.nama,"
-                    + "lmt_user.level,"
-                    + "lmt_detail_user.jabatan,"
-                    + "lmt_detail_user.kelurahan,"
-                    + "lmt_detail_user.kecamatan,"
-                    + "lmt_detail_user.kota,"
-                    + "lmt_detail_user.provinsi",
-                    "lmt_detail_user INNER JOIN lmt_user ON lmt_detail_user.nip = lmt_user.nip",
-                    con);
-            while(rs.next()){
-                NIK = rs.getString(0);
-                namaU = rs.getString(1);
-                lv = rs.getString(2);
-                jabatan = rs.getString(3);
-                kel = rs.getString(4);
-                kec = rs.getString(5);
-                kot = rs.getString(6);
-                prov = rs.getString(7);
-            }
-        }catch(Exception ex){
-            System.out.println("Error : " + ex);
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        
+        boolean DataExist = s.SearchDetUser("lmt_detail_user",request.getParameter("nik"));
+        boolean DataExist1 = s1.SearchUser("lmt_user",request.getParameter("nik"));
+        if (DataExist) {
+            NIK = s.nik;
+            namaU = s.nama;
+            jabatan = s.jabatan;
+            kel = s.kelurahan;
+            kec = s.kecamatan;
+            kot = s.kota;
+            prov = s.provinsi;
+            
+        } else {
+            System.out.println("userNOTexist");
         }
+        if (DataExist1) {
+            lv = s.lv;
+            
+        } else {
+            System.out.println("userNOTexist");
+        }
+            response.sendRedirect("search");
+         
     }
 }

@@ -30,9 +30,6 @@ import javax.servlet.http.HttpServletResponse;
  * @author dNaga
  */
 
-@WebServlet("/inuser")
-@MultipartConfig(maxFileSize = 16177215)
-
 public class InsUser extends HttpServlet{
     DB_Transaction db = new DB_Transaction();
     

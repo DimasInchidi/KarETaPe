@@ -33,8 +33,33 @@ for(Cookie cookie : cookies){
 }
 }
 
+
+    
+
 %>
 <jsp:include page="plate/header.jsp" flush="true"/>
+<%@ page language="java" import="servlet.SearchNIK"%>
+<%
+    String nik = request.getParameter("nik");
+    String nama = request.getParameter("nama");
+
+    String tampattl = request.getParameter("tampattl");
+    String ttl = request.getParameter("ttl");
+    String jk = request.getParameter("jk");
+    String hidup = request.getParameter("hidup");
+    String alamat = request.getParameter("alamat");
+    String rt = request.getParameter("rt");
+    String rw = request.getParameter("rw");
+    String kelurahan = request.getParameter("kelurahan");
+    String kecamatan = request.getParameter("kecamatan");
+    String provinsi = request.getParameter("provinsi");
+    String kota = request.getParameter("kota");
+    String agama = request.getParameter("agama");
+    String status = request.getParameter("status");
+    String pekerjaan = request.getParameter("");
+    String warga = request.getParameter("warga");
+    String gol = request.getParameter("gol");
+%>
 <!-- start: Content -->
 <div id="content" class="span10">
     <ul class="breadcrumb">
@@ -48,12 +73,12 @@ for(Cookie cookie : cookies){
         <div class="row-fluid sortable">
 
             <div class="box-content" style="padding-bottom: 30px">
-                <form class="form-horizontal" style="position: relative">
+                <form class="form-horizontal" style="position: relative" action="caripen">
                     <fieldset>
                         <div class="control-group">
                             <label class="control-label" for="nik">NIK </label>
                             <div class="controls">
-                                <input type="text" class="input-xlarge typeahead" id="nik">                                   
+                                <input type="text" class="input-xlarge" id="nik" name="nik">                                   
                                 <button class="btn" type="submit">Search</button><button class="btn" type="reset">Cancel</button>
                             </div>
                         </div>                        
@@ -69,13 +94,17 @@ for(Cookie cookie : cookies){
                 <div class="control-group">
                     <label class="control-label">NIK :</label>                    
                     <div class="controls">
-                        <p class="help-block">taro sini namanya</p>
+                        <p class="help-block">
+                <%=request.getAttribute("nik")%>
+                        </p>
                     </div>  
                 </div>
                 <div class="control-group">
                     <label class="control-label">Nama :</label>                    
                     <div class="controls">
-                        <p class="help-block">taro sini namanya</p>
+                        <p class="help-block">
+                 <%=request.getAttribute("nama")%>
+                        </p>
                     </div>  
                 </div>
                 <div class="form-actions">
