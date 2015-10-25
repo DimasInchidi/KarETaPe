@@ -43,6 +43,11 @@
         <servlet-name>Manajemen Parameter</servlet-name>
         <jsp-file>/parameter.jsp</jsp-file>
     </servlet>
+    <servlet>
+        <description>untuk dapatin yang di cari</description>
+        <servlet-name>Get Cari Penduduk</servlet-name>
+        <servlet-class>servlet.SearchNIK</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -78,6 +83,10 @@
     <servlet-mapping>
         <servlet-name>Manajemen Parameter</servlet-name>
         <url-pattern>/parameter</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Get Cari Penduduk</servlet-name>
+        <url-pattern>/caripen</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

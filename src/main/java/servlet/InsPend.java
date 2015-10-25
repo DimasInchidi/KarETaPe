@@ -17,16 +17,24 @@
 package servlet;
 
 import java.io.IOException;
+import java.io.InputStream;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
 
 /**
  *
  * @author dNaga
  */
+
+@WebServlet("/inuser")
+@MultipartConfig(maxFileSize = 16177215)
+
 public class InsPend extends HttpServlet{
     DB_Transaction db = new DB_Transaction();
     
@@ -52,21 +60,15 @@ public class InsPend extends HttpServlet{
         status = request.getParameter("status");
         pekerjaan = request.getParameter("kerja");
         warga = request.getParameter("warga");
-        foto = request.getParameter("foto");
-        sidik = request.getParameter("sjari");
-        ttd = request.getParameter("ttd");
         gol = request.getParameter("gold");
         
         String value = nik + "," + nama + "," + tampatl + "," + tl + "," + jk + "," + hidup 
                 + "," + alamat + "," + rt + "," + rw + "," + kel + "," + kec + "," + prov
                 + "," + kota + "," + agama + "," + status + "," + pekerjaan + "," + warga
-                + "," + foto + "," + sidik + "," + ttd + "," + gol;
-        boolean ins = db.Insert("lmt_ektp", value);
-        if(ins){
-            response.sendRedirect("dashboard");
-        }else{
-            response.sendRedirect("dashboard");
-        }
+                + "," + gol;
+        boolean ins = db.Insert("lmt_ektp (nik,nama,tempat_lahir,tanggal_lahir,sex,hidup,alamat,rt,rw,kelurahan,kecamatan,"
+                + "provinsi,kota,agama,status,pekerjaan,warga,goldarah)", value);
+        response.sendRedirect("dashboard");
     }
     
 }
