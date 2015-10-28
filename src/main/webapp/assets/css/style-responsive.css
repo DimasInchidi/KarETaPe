@@ -154,8 +154,8 @@
 		width: 91.666%;
                 height: 91.666%;
 		padding: 22px;
-		margin: 0px 0px;
-		margin-left: 8.334% !important;
+		margin-left: auto;
+                margin-right: auto
 	}
 	
 	.dark {
